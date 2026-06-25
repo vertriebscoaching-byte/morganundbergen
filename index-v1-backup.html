@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morgan &amp; Bergen – Vertriebsdienstleistung mit Fundament-Check vor Akquise</title>
+  <meta name="description" content="Wer in Ihrem Namen anruft, prägt Ihren Ruf. Wir prüfen Angebot, Positionierung und Wording, bevor in Ihrem Namen telefoniert wird. Trägt es nicht, sagen wir ab. Vertriebsdienstleistung für Berater, kleine B2B-Dienstleister, Coaches und Spezialagenturen in der DACH-Region.">
+  <meta property="og:title" content="Morgan &amp; Bergen – Wer in Ihrem Namen anruft, prägt Ihren Ruf.">
+  <meta property="og:description" content="Fundament-Check vor Akquise. Geprüft, bevor ein schlechter Anruf Ihren Ruf kostet.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%231E3A3A'/%3E%3Ctext x='25%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='%23F7F5F2'%3EM%3C/text%3E%3Ctext x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='%23D9601E'%3E%26amp;%3C/text%3E%3Ctext x='75%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='%23F7F5F2'%3EB%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --off:#F7F5F2; --off-2:#FBF9F4; --off-3:#F2EEE6;
+      --petrol:#1E3A3A; --petrol-2:#16302F; --deep:#0E1F1F;
+      --orange:#D9601E; --orange-deep:#B0480F; --orange-soft:#EFA76A;
+      --neutral:#6B7575; --cap:#5E6A6A; --txt:#2E3838;
+      --line:rgba(30,58,58,.14); --line-2:rgba(30,58,58,.24);
+      --p-sub:rgba(247,245,242,.74); --p-cap:rgba(247,245,242,.6); --p-line:rgba(247,245,242,.16);
+      --pad:clamp(22px,5vw,80px); --maxw:1280px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{background:var(--off);color:var(--txt);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    ::selection{background:var(--orange);color:var(--off)}
+    :focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+    section{padding:clamp(72px,11vw,148px) 0}
+
+    h1,h2{font-family:'Newsreader',Georgia,serif;font-optical-sizing:auto;font-weight:600;line-height:1.02;letter-spacing:-.015em;color:var(--petrol)}
+    .d1{font-size:clamp(44px,7.4vw,112px)}
+    .d2{font-size:clamp(34px,5.3vw,80px)}
+    .o{font-family:'Newsreader',serif;font-style:italic;font-weight:500;color:var(--orange)}
+    .lede{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(17px,1.35vw,21px);line-height:1.6;color:var(--txt);max-width:620px;margin-top:28px}
+    .lede .o{font-family:'Plus Jakarta Sans',sans-serif;font-style:normal;font-weight:700;color:var(--orange-deep)}
+    p.body{font-size:16px;line-height:1.7;color:var(--txt)}
+    .quote{border-left:3px solid var(--orange);padding-left:24px;font-family:'Newsreader',serif;font-style:italic;font-size:clamp(18px,1.5vw,24px);line-height:1.5;color:var(--petrol);max-width:680px}
+
+    .cap,.secno,.mono{font-family:'Plus Jakarta Sans',sans-serif;text-transform:uppercase;letter-spacing:.2em;font-weight:600}
+    .secno{font-size:12px;color:var(--cap);margin-bottom:clamp(28px,4vw,52px)}
+    .secno b{font-family:'Newsreader',serif;font-style:italic;font-weight:600;color:var(--orange);font-size:1.2em;letter-spacing:0;margin-right:6px}
+    .mono{font-size:11.5px;color:var(--cap)}
+
+    .btn{display:inline-flex;align-items:center;gap:11px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;padding:18px 28px;border-radius:8px;border:1px solid transparent;transition:transform .18s,background .18s,color .18s,border-color .18s;cursor:pointer}
+    .btn.fill{background:var(--orange);color:var(--off);border-color:var(--orange)}
+    .btn.fill:hover{transform:translateY(-2px);background:#C8581C}
+    .btn.ghost{background:transparent;color:var(--petrol);border-color:var(--line-2)}
+    .btn.ghost:hover{border-color:var(--petrol)}
+
+    header{position:sticky;top:0;z-index:60;background:rgba(30,58,58,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--p-line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:24px}
+    .brand{display:flex;flex-direction:column;line-height:1}
+    .brand .nm{font-family:'Newsreader',serif;font-weight:700;font-size:23px;letter-spacing:-.01em;color:var(--off)}
+    .brand .nm .dot{color:var(--orange-soft);margin:0 .2em}
+    .brand .sub{font-family:'Plus Jakarta Sans',sans-serif;font-size:9.5px;letter-spacing:.26em;color:var(--p-cap);margin-top:6px;text-transform:uppercase;font-weight:600}
+    .nlinks{display:flex;align-items:center;gap:30px}
+    .nlinks a{font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--p-sub);font-weight:600;transition:color .18s}
+    .nlinks a:hover{color:var(--orange-soft)}
+    .ncta{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;background:var(--orange);color:var(--off);padding:11px 18px;border-radius:7px;transition:transform .18s}
+    .ncta:hover{transform:translateY(-1px)}
+    .burger{display:none;background:none;border:0;color:var(--off);width:42px;height:42px;cursor:pointer}
+    #mnav{display:none;border-top:1px solid var(--p-line);background:var(--petrol)}
+    #mnav a{display:block;padding:16px var(--pad);font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--off);border-bottom:1px solid var(--p-line)}
+
+    .sec-petrol{background:var(--petrol);color:var(--off)}
+    .sec-petrol h1,.sec-petrol h2{color:var(--off)}
+    .sec-petrol .o{color:var(--orange-soft)}
+    .sec-petrol .lede{color:var(--p-sub)}
+    .sec-petrol .lede .o{color:var(--orange-soft)}
+    .sec-petrol .secno,.sec-petrol .mono,.sec-petrol .cap{color:var(--p-cap)}
+    .sec-petrol .secno b{color:var(--orange-soft)}
+    .sec-petrol .btn.ghost{color:var(--off);border-color:var(--p-line)}
+    .sec-petrol .btn.ghost:hover{border-color:var(--off)}
+    .sec-petrol .quote{color:var(--off)}
+
+    .hero{position:relative;overflow:hidden;padding:clamp(60px,9vw,120px) 0 clamp(72px,11vw,140px)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(36px,5vw,72px);align-items:center}
+    .hero .ey{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--p-cap);font-weight:600;margin-bottom:30px}
+    .hero .ey b{color:var(--orange-soft);font-weight:700}
+    .hero h1{font-size:clamp(46px,7.2vw,116px)}
+    .hero .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+    .hero .claim{font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:clamp(20px,2.1vw,30px);line-height:1.35;color:var(--off);margin-top:26px;max-width:640px}
+    .hero .claim .o{color:var(--orange-soft)}
+    .hero .tags{font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--p-cap);font-weight:600;margin-top:30px}
+    .portrait{aspect-ratio:4/5;border:1px solid var(--p-line);border-radius:12px;background:linear-gradient(160deg,#244746,var(--petrol) 72%);display:flex;align-items:flex-end;padding:26px;position:relative;overflow:hidden}
+    .portrait::after{content:'';position:absolute;inset:0;background:radial-gradient(120% 90% at 75% 15%,rgba(217,96,30,.18),transparent 60%)}
+    .portrait .cap{position:relative;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--p-cap);font-weight:600}
+
+    .block{border:1px solid var(--line);border-radius:12px;background:var(--off-2);padding:clamp(24px,3vw,40px)}
+    .block.framed{border-color:var(--orange)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:start}
+    .split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:start;margin-top:clamp(36px,5vw,60px)}
+
+    .acc details{border:1px solid var(--line);border-radius:10px;background:var(--off-2);margin-bottom:14px;overflow:hidden;transition:border-color .2s,background .2s}
+    .acc details[open]{border-color:var(--orange);background:var(--off-3)}
+    .acc summary{list-style:none;cursor:pointer;display:flex;align-items:flex-start;gap:18px;padding:22px 24px}
+    .acc summary::-webkit-details-marker{display:none}
+    .acc .tag{font-family:'Plus Jakarta Sans',sans-serif;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--orange-deep);padding-top:7px;min-width:64px}
+    .acc .h{flex:1;font-family:'Newsreader',serif;font-weight:600;font-size:clamp(18px,1.5vw,23px);color:var(--petrol);letter-spacing:-.01em}
+    .acc .pl{font-family:'Newsreader',serif;font-size:24px;color:var(--orange);line-height:1;transition:transform .22s}
+    .acc details[open] .pl{transform:rotate(45deg)}
+    .acc .bd{padding:0 24px 24px;color:var(--txt);font-size:15.5px;line-height:1.7;max-width:620px}
+    .acc .bd .oton{color:var(--petrol);font-family:'Newsreader',serif;font-style:italic}
+    .scene{margin-top:16px;border-left:2px solid var(--orange);padding:6px 0 6px 18px;font-family:'Newsreader',serif;font-style:italic;color:var(--petrol);font-size:15px;line-height:1.55;max-width:580px}
+    .scene .when{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-style:normal;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-bottom:6px}
+
+    .cost{margin-top:clamp(34px,4vw,52px)}
+    .cost .lab{font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-bottom:10px}
+    .cost .big{font-family:'Newsreader',serif;font-weight:600;font-size:clamp(40px,5.2vw,76px);color:var(--orange);letter-spacing:-.02em;line-height:1}
+    .cost input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:2px;background:var(--line-2);margin:26px 0 8px;border-radius:2px}
+    .cost input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--orange);cursor:pointer;border:3px solid var(--off-2)}
+    .cost input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--orange);cursor:pointer;border:3px solid var(--off-2)}
+    .cost .ends{display:flex;justify-content:space-between;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;color:var(--cap);font-weight:600;letter-spacing:.05em}
+    .cost .res{border:1px solid var(--orange);border-radius:10px;background:var(--off-3);padding:clamp(20px,2.5vw,32px)}
+    .cost .total{font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;letter-spacing:.02em;color:var(--txt);margin-top:24px;line-height:1.6}
+    .cost .total b{color:var(--orange);font-family:'Newsreader',serif;font-weight:600;font-size:clamp(20px,2vw,26px)}
+    .cost .disc{font-size:12.5px;color:var(--cap);margin-top:20px;line-height:1.6;border-top:1px solid var(--line);padding-top:16px}
+
+    .steps{margin-top:clamp(36px,5vw,56px);border-top:1px solid var(--line-2)}
+    .step{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,3.5vw,52px);padding:clamp(26px,3.4vw,42px) 0;border-bottom:1px solid var(--line)}
+    .step .n{font-family:'Newsreader',serif;font-weight:600;font-style:italic;font-size:clamp(30px,3.6vw,58px);color:var(--orange);line-height:1}
+    .step h3{font-family:'Newsreader',serif;font-weight:600;font-size:clamp(21px,2vw,30px);color:var(--petrol);letter-spacing:-.015em;margin-bottom:10px}
+    .step p{font-size:15.5px;line-height:1.7;color:var(--txt);max-width:680px}
+    .step p .oton{color:var(--petrol);font-family:'Newsreader',serif;font-style:italic}
+    .audiosoon{display:inline-block;margin-top:14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--cap);padding:7px 13px;border:1px dashed var(--line-2);border-radius:99px}
+    .audiosoon::before{content:'▶  ';color:var(--orange-deep)}
+
+    .facts{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);margin-top:clamp(36px,4vw,52px);border-top:1px solid var(--line);padding-top:clamp(26px,3vw,36px)}
+    .facts h5{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-bottom:16px}
+    .facts ul{list-style:none}
+    .facts li{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;line-height:1.5;color:var(--txt)}
+    .facts li:last-child{border-bottom:0}
+    .facts li b{font-family:'Newsreader',serif;font-weight:600;font-style:italic;color:var(--petrol);font-size:16px;white-space:nowrap}
+
+    .cols2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:clamp(34px,5vw,56px)}
+    .cols2 .c{border:1px solid var(--line);border-radius:12px;padding:clamp(24px,3vw,38px);background:var(--off-2)}
+    .cols2 .c.yes{border-color:var(--orange)}
+    .cols2 h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-bottom:22px}
+    .cols2 ul{list-style:none}
+    .cols2 li{display:flex;gap:13px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.55;color:var(--txt)}
+    .cols2 li:last-child{border-bottom:0}
+    .cols2 li .m{color:var(--orange);font-family:'Newsreader',serif;font-weight:600;flex-shrink:0;font-size:19px;line-height:1.25}
+
+    .people{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:clamp(34px,5vw,56px)}
+    .person{border:1px solid var(--line);border-radius:12px;background:var(--off-2);padding:clamp(24px,3vw,38px)}
+    .person .top{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    .ring{width:58px;height:58px;border:1.5px solid var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Newsreader',serif;font-style:italic;font-weight:600;font-size:19px;color:var(--orange-deep);flex-shrink:0;position:relative;box-shadow:inset 0 0 0 1px rgba(217,96,30,.18)}
+    .ring::after{content:'';position:absolute;top:-2px;right:-2px;width:9px;height:9px;background:var(--petrol);border-radius:50%;border:2px solid var(--off-2)}
+    .formhint{font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.05em;color:var(--p-cap);margin-bottom:18px;text-align:center;line-height:1.5}
+    .formhint span{color:var(--orange-soft);margin:0 .35em}
+
+    /* SELBSTTEST */
+    /* SELBSTTEST · Editorial */
+    .selftest{margin-top:clamp(48px,6vw,80px);position:relative;padding-top:clamp(32px,4vw,52px);border-top:1px solid var(--line-2)}
+    .selftest::before{content:'';position:absolute;top:-2px;left:0;width:96px;height:3px;background:var(--orange)}
+    .selftest .stHead{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:clamp(20px,2.5vw,28px);font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--cap);font-weight:700}
+    .selftest .stHead .step{color:var(--petrol)}
+    .selftest .segments{display:flex;gap:6px;margin-bottom:clamp(48px,6.5vw,88px)}
+    .selftest .seg{flex:1;height:2px;background:var(--line);transition:background .3s ease}
+    .selftest .seg.on{background:var(--orange)}
+    .selftest .bodyGrid{display:grid;grid-template-columns:1fr;gap:clamp(28px,4vw,56px);align-items:start}
+    @media (min-width:780px){
+      .selftest .bodyGrid{grid-template-columns:180px 1fr;gap:clamp(48px,6vw,96px)}
+    }
+    .selftest .qnum{font-family:'Newsreader',serif;font-weight:600;font-style:italic;font-size:clamp(80px,13vw,160px);line-height:.9;color:var(--orange);letter-spacing:-.04em;margin-top:-14px}
+    .selftest .qnum .of{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-style:normal;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--cap);font-weight:700;margin-top:18px;line-height:1}
+    .selftest .q-text{font-family:'Newsreader',serif;font-weight:600;font-size:clamp(30px,4.2vw,56px);line-height:1.06;letter-spacing:-.022em;color:var(--petrol);margin:0 0 clamp(28px,3.6vw,44px) 0;max-width:680px}
+    .selftest .q-text .o{font-style:italic;color:var(--orange);font-weight:600}
+    .selftest .opts{display:flex;flex-direction:column;gap:6px;margin-bottom:clamp(36px,4.5vw,56px);list-style:none;padding:0}
+    .selftest .opt{display:flex;align-items:flex-start;gap:20px;padding:20px 24px;border:1px solid var(--line);background:var(--off);cursor:pointer;transition:border-color .2s ease,transform .2s ease,background .2s ease;font-family:'Plus Jakarta Sans',sans-serif;font-size:16.5px;line-height:1.55;color:var(--txt);text-align:left;width:100%;border-radius:0;position:relative}
+    .selftest .opt:hover{border-color:var(--petrol);transform:translateX(2px)}
+    .selftest .opt.sel{border-color:var(--orange);background:var(--off-2)}
+    .selftest .opt.sel::before{content:'';position:absolute;left:-1px;top:-1px;bottom:-1px;width:3px;background:var(--orange)}
+    .selftest .opt .ix{font-family:'Newsreader',serif;font-style:italic;font-weight:600;font-size:18px;color:var(--cap);flex-shrink:0;line-height:1.5;transition:color .2s ease;letter-spacing:.01em;min-width:22px}
+    .selftest .opt.sel .ix{color:var(--orange)}
+    .selftest .opt .txt{flex:1}
+    .selftest .nav-q{display:flex;justify-content:space-between;align-items:center;gap:14px;border-top:1px solid var(--line);padding-top:24px}
+    .selftest .back,.selftest .next{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:14px 26px;border:1px solid transparent;cursor:pointer;transition:transform .15s,background .15s,color .15s,border-color .15s;border-radius:0}
+    .selftest .back{background:transparent;color:var(--cap);border-color:var(--line-2)}
+    .selftest .back:not(:disabled):hover{color:var(--petrol);border-color:var(--petrol)}
+    .selftest .back:disabled{opacity:.3;cursor:not-allowed}
+    .selftest .next{background:var(--orange);color:var(--off);border-color:var(--orange)}
+    .selftest .next:not(:disabled):hover{transform:translateY(-1px);background:#C8581C}
+    .selftest .next:disabled{opacity:.3;cursor:not-allowed}
+    /* Result */
+    .selftest .rletter{font-family:'Newsreader',serif;font-weight:600;font-style:italic;font-size:clamp(110px,16vw,200px);line-height:.85;color:var(--orange);letter-spacing:-.05em;margin-top:-18px}
+    .selftest .rletter .lbl{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-style:normal;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--cap);font-weight:700;margin-top:22px;line-height:1}
+    .selftest .rtitle{font-family:'Newsreader',serif;font-weight:600;font-size:clamp(38px,5.6vw,76px);line-height:1.03;letter-spacing:-.025em;color:var(--petrol);margin:0 0 clamp(24px,3vw,36px) 0;max-width:760px}
+    .selftest .rtitle .o{font-style:italic;color:var(--orange);font-weight:600}
+    .selftest .rbody{font-size:clamp(16px,1.2vw,18px);line-height:1.78;color:var(--txt);max-width:640px;margin-bottom:clamp(32px,4vw,44px)}
+    .selftest .rbody p{margin-bottom:16px}
+    .selftest .rbody p:last-child{margin-bottom:0}
+    .selftest .rbody ul li strong{font-family:'Newsreader',serif;font-style:italic;font-weight:600;font-size:1.05em}
+    .selftest .ractions{display:flex;flex-wrap:wrap;gap:24px;align-items:center}
+    .selftest .restart{font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--cap);background:transparent;border:0;cursor:pointer;padding:8px 0;text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--line-2)}
+    .selftest .restart:hover{color:var(--petrol);text-decoration-color:var(--petrol)}
+    @media (max-width:780px){
+      .selftest .qnum{font-size:clamp(64px,18vw,110px);margin-top:0}
+      .selftest .qnum .of{margin-top:12px}
+      .selftest .rletter{font-size:clamp(96px,22vw,160px);margin-top:0}
+      .selftest .rletter .lbl{margin-top:14px}
+    }
+    @media (max-width:560px){
+      .selftest{padding-top:28px}
+      .selftest .opt{padding:16px 18px;font-size:15.5px;gap:14px}
+      .selftest .opt .ix{font-size:16px}
+      .selftest .nav-q{flex-direction:column-reverse;align-items:stretch;gap:10px}
+      .selftest .back,.selftest .next{width:100%;padding:15px;font-size:11.5px}
+      .selftest .ractions{flex-direction:column;align-items:stretch;gap:14px}
+      .selftest .ractions .btn{width:100%;text-align:center}
+      .selftest .rtitle{font-size:clamp(32px,9vw,46px)}
+      .selftest .q-text{font-size:clamp(26px,7vw,38px)}
+    }
+    .person .nm{font-family:'Newsreader',serif;font-weight:600;font-size:21px;color:var(--petrol);letter-spacing:-.01em}
+    .person .ro{font-family:'Plus Jakarta Sans',sans-serif;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-top:6px}
+    .person p{font-size:15px;line-height:1.7;color:var(--txt)}
+    .pilot{margin-top:18px;border:1px dashed var(--line-2);border-radius:12px;padding:clamp(22px,3vw,34px);color:var(--txt);font-size:15.5px;line-height:1.7}
+    .pilot b{color:var(--petrol);font-family:'Newsreader',serif;font-style:italic;font-weight:600}
+
+    .industries{margin-top:clamp(34px,4vw,52px);border-top:1px solid var(--line);padding-top:clamp(26px,3vw,36px)}
+    .industries h5{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-bottom:18px}
+    .industries .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .industries .tg{display:flex;flex-direction:column;gap:6px;background:var(--off-2);border:1px solid var(--line);padding:14px 18px;border-radius:10px}
+    .industries .tg .t{font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:17px;color:var(--petrol);line-height:1.2}
+    .industries .tg .sub{font-family:'Plus Jakarta Sans',sans-serif;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--cap);font-weight:600;line-height:1.4}
+    .industries .note{font-size:12.5px;color:var(--cap);margin-top:18px;line-height:1.6;max-width:640px}
+
+    .phases{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:clamp(28px,4vw,44px) 0;padding:clamp(22px,2.6vw,30px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative}
+    .phases::before{content:'';position:absolute;left:10%;right:10%;top:50%;height:1px;background:var(--line-2);z-index:0}
+    .phases .ph{position:relative;z-index:1;background:var(--off);padding:0 16px;display:flex;flex-direction:column;align-items:center;gap:9px;flex:1;min-width:0;text-align:center}
+    .phases .ph .dot{width:11px;height:11px;background:var(--orange);border-radius:50%;outline:4px solid var(--off)}
+    .phases .ph .num{font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange-deep);font-weight:600}
+    .phases .ph .lab{font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:clamp(14px,1.1vw,17px);color:var(--petrol);line-height:1.2}
+    @media (max-width:700px){.phases{flex-direction:column;border:0;padding:0;gap:14px}.phases::before{display:none}.phases .ph{flex-direction:row;width:100%;justify-content:flex-start;gap:14px;text-align:left;padding:0;background:transparent}}
+
+    .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,64px);align-items:start;margin-top:clamp(34px,5vw,52px)}
+    .cmail{display:inline-flex;flex-direction:column;gap:4px;margin-top:28px}
+    .cmail .k{font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--p-cap);font-weight:600}
+    .cmail .v{font-family:'Newsreader',serif;font-size:18px;color:var(--off)}
+    .cmail:hover .v{color:var(--orange-soft)}
+    .formcard{border:1px solid var(--p-line);border-radius:12px;background:var(--petrol-2);padding:clamp(24px,3vw,40px)}
+    form .f{margin-bottom:22px}
+    form label{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--p-cap);font-weight:600;margin-bottom:9px}
+    form input,form textarea{width:100%;background:rgba(247,245,242,.04);border:1px solid var(--p-line);border-radius:8px;color:var(--off);font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;padding:13px 15px;transition:border-color .18s}
+    form input::placeholder,form textarea::placeholder{color:var(--p-cap)}
+    form input:focus,form textarea:focus{outline:none;border-color:var(--orange)}
+    form textarea{resize:vertical;min-height:74px}
+    form button{width:100%;margin-top:8px;background:var(--orange);color:var(--off);border:0;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:18px;cursor:pointer;transition:transform .18s}
+    form button:hover{transform:translateY(-2px)}
+    form .note{font-family:'Plus Jakarta Sans',sans-serif;font-size:10.5px;letter-spacing:.05em;color:var(--p-cap);text-align:center;margin-top:14px;font-weight:600}
+
+    footer{border-top:1px solid var(--line-2);padding:clamp(48px,6vw,76px) 0 36px;background:var(--off)}
+    .fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px}
+    .fgrid .ft{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange-deep);font-weight:600;margin-bottom:14px}
+    .fgrid .brand .nm{color:var(--petrol)}
+    .fgrid .brand .nm .dot{color:var(--orange-deep)}
+    .fgrid .brand .sub{color:var(--cap)}
+    .fgrid p,.fgrid a{display:block;font-size:14px;color:var(--txt);line-height:1.8}
+    .fgrid a:hover{color:var(--orange-deep)}
+    .fgrid a.soon{color:var(--cap);cursor:not-allowed}
+    .fgrid a.soon:hover{color:var(--cap)}
+    .fbot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:clamp(40px,5vw,64px);padding-top:24px;border-top:1px solid var(--line);font-size:12px;letter-spacing:.04em;color:var(--cap)}
+    .fbot .claim{font-family:'Newsreader',serif;font-style:italic;font-size:15px;color:var(--petrol)}
+
+    #scta{position:fixed;left:0;right:0;bottom:0;z-index:55;padding:14px var(--pad);background:linear-gradient(to top,var(--off),var(--off) 72%,transparent);border-top:1px solid var(--line);transform:translateY(150%);transition:transform .35s;display:none}
+    #scta a{display:block;text-align:center;background:var(--orange);color:var(--off);padding:16px;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+
+    .js .rv{opacity:0;transform:translateY(22px)}
+    .js .rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s ease}
+    @media (prefers-reduced-motion:reduce){.js .rv{opacity:1!important;transform:none!important}html{scroll-behavior:auto}}
+
+    @media (max-width:900px){
+      .hero-grid{grid-template-columns:1fr}.portrait{display:none}
+      .split,.grid-2,.cols2,.people,.cta-grid,.fgrid,.facts{grid-template-columns:1fr}
+      .step{grid-template-columns:1fr;gap:8px}
+      .nlinks,.ncta{display:none}.burger{display:flex;align-items:center;justify-content:center}
+      #scta{display:block}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Morgan & Bergen","description":"Vertriebsdienstleistung mit Fundament-Check vor Akquise. Für uns fängt Sales bei Ihrer Vision an. Erst wenn Angebot, Positionierung und Wording stehen, beginnt die Akquise.","founder":[{"@type":"Person","name":"Jamie Morgan"},{"@type":"Person","name":"Svenja Bergen"}],"areaServed":"DACH","serviceType":"Vertriebsdienstleistung / Akquise","slogan":"Vertriebsarbeit, die hält.","knowsLanguage":"de"}
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="wrap nav">
+      <a href="#top" class="brand" aria-label="Morgan & Bergen – Startseite">
+        <span class="nm">Morgan<span class="dot">&amp;</span>Bergen</span>
+        <span class="sub">Vertriebsarbeit · Nürnberg · DACH</span>
+      </a>
+      <nav class="nlinks">
+        <a href="#problem">Problem</a>
+        <a href="#kosten">Was es kostet</a>
+        <a href="#methode">Methode</a>
+        <a href="#selbsttest">Selbsttest</a>
+        <a href="#team">Team</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#anfrage" class="ncta">Fundament-Check</a>
+      <button id="burger" class="burger" aria-label="Menü" aria-expanded="false">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <div id="mnav">
+      <a href="#problem">Problem</a>
+      <a href="#kosten">Was es kostet</a>
+      <a href="#methode">Methode</a>
+      <a href="#selbsttest">Selbsttest</a>
+      <a href="#team">Team</a>
+      <a href="#faq">FAQ</a>
+      <a href="#anfrage" style="color:var(--orange-soft)">Fundament-Check anfragen →</a>
+    </div>
+  </header>
+  <span id="top"></span>
+
+  <!-- HERO -->
+  <section class="hero sec-petrol">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="ey">Substanz <b>·</b> Fundament <b>·</b> Akquise</p>
+          <h1 class="d1">Wer in Ihrem<br>Namen anruft,<br>prägt Ihren <span class="o">Ruf.</span></h1>
+          <p class="claim">Für uns fängt Sales bei Ihrer <span class="o">Vision</span> an.</p>
+          <p class="lede">Auch wenn Sie nicht im Raum sind. Wir machen Sie sichtbar. Und sorgen dafür, dass der Eindruck, den Sales von Ihnen im Markt hinterlässt, <span class="o">Ihre Qualität spiegelt.</span> Nicht Ihren Namen verbrennt. Deshalb telefonieren wir erst, wenn Ihr Fundament steht: Angebot, Positionierung, Wording geprüft. Trägt es nicht, sagen wir ab.</p>
+          <div class="actions">
+            <a href="#anfrage" class="btn fill">Fundament-Check anfragen <span>→</span></a>
+            <a href="#methode" class="btn ghost">Wie wir arbeiten</a>
+          </div>
+          <p class="tags">Für Berater · kleine B2B-Dienstleister · Coaches · Spezialagenturen</p>
+        </div>
+        <div class="portrait">
+          <!-- BILD: Svenja Bergen &amp; Jamie Morgan, Doppelporträt, warm/souverän, kein Stock -->
+          <span class="cap">Foto folgt · Svenja Bergen &amp; Jamie Morgan</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 · DIAGNOSE -->
+  <section id="problem">
+    <div class="wrap">
+      <p class="secno rv"><b>01</b> Diagnose</p>
+      <div class="split">
+        <div class="rv">
+          <h2 class="d2">Sie können es. Es fehlt nur der <span class="o">Weg</span> zum Kunden.</h2>
+          <p class="lede">Ihr Handwerk steht. Ihr Angebot ist gut, manchmal brillant. Was fehlt, ist nicht Können. Es fehlt ein Weg zum Kunden, der weder Ihre Zeit frisst noch Ihren Namen ruiniert.</p>
+          <p class="quote" style="margin-top:32px">„Ich liefere gut, weil ich mich auf die Arbeit konzentriere. Sobald ich Akquise selbst mache, leidet eins von beiden. Und ich weiß nicht mehr, welches."</p>
+          <p class="mono" style="margin-top:28px">Tippen Sie an, was Sie trifft</p>
+        </div>
+        <div class="acc rv">
+          <details open>
+            <summary><span class="tag">Muster 01</span><span class="h">Profi im Fach. Kein Sales-Profi. Und keine Zeit, einer zu werden.</span><span class="pl">+</span></summary>
+            <div class="bd">
+              Vertrieb ist ein eigenes Handwerk. Nebenbei lernen, während Sie liefern, klappt nicht. Entweder Sie haben den Kopf nicht frei. Oder Sie können es einfach nicht, weil es nie Ihr Fach war. Meistens beides. Und das ist okay. Ein Architekt soll auch nicht der eigene Elektriker sein.
+              <div class="scene"><span class="when">Donnerstag, 14 Uhr</span>Drei Leute haben Ihnen heute gesagt, Sie „sollten mehr posten". Sie wissen es. Sie machen es nicht. Weil es nicht Ihr Fach ist. Und Sie werden nicht in einer Stunde zum Vertriebler.</div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="tag">Muster 02</span><span class="h">Empfehlungen reichen nicht mehr.</span><span class="pl">+</span></summary>
+            <div class="bd">
+              Drei Jahre lief alles über Mundpropaganda. Sie waren beschäftigt, hatten gute Kunden, alles war gut. Dann wurde es leiser. Nicht abrupt, nur langsam. Und jetzt merken Sie: der Strom kommt nicht von alleine zurück.
+              <div class="scene"><span class="when">Donnerstag, 16 Uhr</span>Ein Bestandskunde verschiebt zum dritten Mal. Sie schauen in den Kalender für Mai. Zwei Termine. Sie fragen sich, wann das letzte Mal jemand von alleine angefragt hat.</div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="tag">Muster 03</span><span class="h">Ich kann nicht alles gleichzeitig sein.</span><span class="pl">+</span></summary>
+            <div class="bd">
+              Sie liefern. Sie halten Beziehungen. Sie schreiben Angebote und Rechnungen, sind sichtbar auf LinkedIn. Und sollen jetzt auch noch kalt anrufen. Etwas leidet immer. Meistens das, was Sie am besten können.
+              <div class="scene"><span class="when">Sonntagabend</span>Sie schreiben drei Namen auf einen Zettel für Montag. Montag wird der Tag voll. Mittwoch sind die Namen weg, ohne dass Sie sie angerufen haben.</div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="tag">Muster 04</span><span class="h">Einmal gebrannt: billig hat doppelt gekostet.</span><span class="pl">+</span></summary>
+            <div class="bd">
+              Vielleicht haben Sie es schon getestet. 1.500 € im Monat, „erste Termine in zwei Wochen". Die Termine kamen, irgendwie. Manche waren nicht qualifiziert. Einer war gar nicht echt eingebucht. Sie haben nach drei Monaten gekündigt. Das ungute Bauchgefühl ist geblieben.
+              <div class="scene"><span class="when">Dienstag, 11 Uhr</span>Sie sitzen in einem Erstgespräch und merken: das Gegenüber ist nicht informiert, war eher überredet als überzeugt. Sie verlassen den Call und denken: Das war jetzt mein Name, der da gewirkt hat.</div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · KOSTEN -->
+  <section id="kosten">
+    <div class="wrap">
+      <p class="secno rv"><b>02</b> Was es kostet</p>
+      <h2 class="d2 rv">Ein schlechter Anruf kostet nicht den Termin.<br><span class="o">Den nächsten.</span></h2>
+      <div class="block framed cost rv" style="margin-top:clamp(36px,5vw,56px)">
+        <div class="grid-2" style="align-items:end">
+          <div>
+            <div class="lab">Ihr typischer Auftragswert</div>
+            <div class="big"><span id="av">6.500</span> €</div>
+            <input id="slider" type="range" min="2500" max="80000" step="100" value="6500" aria-label="Typischer Auftragswert">
+            <div class="ends"><span>2.500 €</span><span>80.000 €</span></div>
+          </div>
+          <div class="res">
+            <div class="lab" style="margin-bottom:8px">Verlorenes Folgegeschäft pro Jahr</div>
+            <div class="big">ca. <span id="loss">19.500</span> €</div>
+            <p class="body" style="font-size:13.5px;margin-top:8px">bei nur 3 Kunden, die wegen eines verbrannten Rufs nicht wiederkommen</p>
+          </div>
+        </div>
+        <p class="total">Über drei Jahre: <b>ca. <span id="loss3">58.500</span> €</b>. Folgegeschäft, das ein einziger schlechter Eindruck kostet.</p>
+        <p class="disc">Annahme: ein guter Erstkunde bringt im Schnitt drei Folgeaufträge. Rechenmodell, kein Garantiewert. Verlust ist nicht nur Euro: Sichtbarkeit, Verhandlungsposition und Folgeanfragen kosten still mit. Genau das prüfen wir im Fundament-Check, bevor in Ihrem Namen telefoniert wird.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · DER UNTERSCHIED -->
+  <section class="sec-petrol" style="text-align:center">
+    <div class="wrap">
+      <p class="secno rv" style="text-align:left"><b>03</b> Der Unterschied</p>
+      <h2 class="d2 rv" style="max-width:1080px;margin:0 auto">Im Markt bleibt nicht die Zahl der Anrufe hängen. Es bleibt, <span class="o">wie sie sich angefühlt haben.</span></h2>
+      <p class="lede rv" style="margin:32px auto 0;text-align:center">Wir machen Sie sichtbar. So, dass dieser Eindruck Ihre Qualität spiegelt. Wir haben schon Kunden abgesagt. Genau deshalb dürfen die anderen bleiben.</p>
+      <div class="rv" style="margin-top:40px"><a href="#anfrage" class="btn fill">Fundament-Check anfragen <span>→</span></a></div>
+    </div>
+  </section>
+
+  <!-- 04 · METHODE -->
+  <section id="methode">
+    <div class="wrap">
+      <p class="secno rv"><b>04</b> Die Methode</p>
+      <h2 class="d2 rv">Ein System. <span class="o">Nicht lose Anrufe.</span></h2>
+      <p class="lede rv">Vier Schritte, die aufeinander aufbauen. Der erste ist der, den alle anderen überspringen.</p>
+
+      <div class="phases rv">
+        <div class="ph"><span class="dot"></span><span class="num">01</span><span class="lab">Fundament-Check</span></div>
+        <div class="ph"><span class="dot"></span><span class="num">02</span><span class="lab">Schärfen</span></div>
+        <div class="ph"><span class="dot"></span><span class="num">03</span><span class="lab">Akquise</span></div>
+        <div class="ph"><span class="dot"></span><span class="num">04</span><span class="lab">Lieferung</span></div>
+      </div>
+
+      <div class="steps">
+        <div class="step rv"><div class="n">01</div><div><h3>Fundament-Check</h3><p>Kein Workshop. Ihr Markenschutz, bevor der erste Anruf rausgeht. Wir prüfen Angebot, Positionierung, Wording. Trägt das Fundament nicht, sagen wir ab. Bevor es Ihren Ruf kostet.</p><div class="scene"><span class="when">Montag, 9:30 Uhr</span>Wir lesen Ihre letzten drei Angebote. Wir hören 20 Minuten von Ihnen am Telefon. Am Abend bekommen Sie eine Seite: was am Hörer trägt, was nicht.</div></div></div>
+        <div class="step rv"><div class="n">02</div><div><h3>Schärfen</h3><p>Wo es nicht trägt, ziehen wir es gemeinsam fest. Kein Komplett-Rebrand. Nur die Stellschrauben, die am Telefon den Unterschied machen. Bevor wir wählen, lesen wir uns drei Tage in Ihre Materie ein.</p><div class="scene"><span class="when">Dienstag, 14 Uhr</span>Wir sitzen zu zweit über Ihrem Wording. Drei Stellschrauben markiert, eine pro Sitzung verprobt. Sie hören mit. Sie korrigieren.</div></div></div>
+        <div class="step rv"><div class="n">03</div><div><h3>Akquise mit Substanz</h3><p>Jetzt wird telefoniert. Von Svenja, seit über 15 Jahren. Ihr O-Ton: <span class="oton">„Wenn ich es für jemand anderen mache, ist es leichter, weil mein Kopf nicht mit drin hängt. Ein Nein ist bei mir nie ein endgültiges Nein."</span><br><span class="audiosoon">Marken-Probe folgt · 30 Sek Svenja</span></p><div class="scene"><span class="when">Mittwoch, 10 Uhr</span>Svenja telefoniert. Sie hört. Sie bleibt im Gespräch, auch wenn ein Nein kommt. Am Abend bekommen Sie eine Notiz, mit wem heute gesprochen wurde.</div></div></div>
+        <div class="step rv"><div class="n">04</div><div><h3>Lieferung</h3><p>Harte Zahlen, ehrliche Rückmeldung. Was am Telefon passiert, sagt etwas über Ihr Angebot. Das hören Sie von uns. Auch wenn es unbequem ist.</p><div class="scene"><span class="when">Freitag, 17 Uhr</span>Wir schicken Ihnen, was wir gehört haben. Auch das, was wir nicht hören wollten. Sie wissen jeden Freitag, wo Sie stehen.</div></div></div>
+      </div>
+
+      <div class="facts rv">
+        <div>
+          <h5>Zeit pro Schritt</h5>
+          <ul>
+            <li>Fundament-Check <b>1–2 Wochen</b></li>
+            <li>Schärfen <b>1–3 Wochen</b></li>
+            <li>Akquise-Mandat <b>3–6 Monate</b></li>
+            <li>Lieferung &amp; Bericht <b>monatlich</b></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Investitionsrahmen</h5>
+          <ul>
+            <li>Setup einmalig <b>individuell</b></li>
+            <li>Mandat monatlich <b>ab 1.950 €</b></li>
+            <li>Skaliert mit <b>Komplexität</b></li>
+            <li>Mindestlaufzeit <b>3 Monate</b></li>
+            <li>Start nach dem Check.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="quote rv" style="margin-top:clamp(34px,4vw,52px);max-width:840px;font-size:clamp(18px,1.7vw,24px)">Wir bauen Wege, die zu Ihnen passen. Sichtbarkeit, die Ihre Qualität spiegelt. Keine Pipeline, durch die alle gleich durchmüssen. Sechs Kunden im Jahr. Kein Skalieren.</p>
+    </div>
+  </section>
+
+  <!-- 05 · PASSEND -->
+  <section id="fuer-wen">
+    <div class="wrap">
+      <p class="secno rv"><b>05</b> Passt das zu Ihnen?</p>
+      <h2 class="d2 rv">Wir sind nicht für jeden. <span class="o">Mit Absicht.</span></h2>
+      <div class="cols2">
+        <div class="c yes rv">
+          <h4>Das passt, wenn …</h4>
+          <ul>
+            <li><span class="m">+</span> Ihr Angebot ist gut. Aber die Akquise ist faktisch Ihre eigene und läuft ohne System.</li>
+            <li><span class="m">+</span> Sie wollen die kalte Erstansprache abgeben, die warmen Kontakte aber selbst behalten.</li>
+            <li><span class="m">+</span> Sie wollen mitbestimmen, wer in Ihrem Namen angesprochen wird.</li>
+            <li><span class="m">+</span> Sie wollen ehrliches Feedback zu Ihrem Angebot. Auch wenn es unbequem ist.</li>
+          </ul>
+        </div>
+        <div class="c rv">
+          <h4>Das passt nicht, wenn …</h4>
+          <ul>
+            <li><span class="m">–</span> Sie die billigste Lösung suchen („500 € Vertriebsarbeit").</li>
+            <li><span class="m">–</span> Sie Menge wollen, ohne dass jemand Ihr Angebot hinterfragt.</li>
+            <li><span class="m">–</span> Sie sofort wählen lassen wollen, ohne dass das Fundament geprüft wird.</li>
+            <li><span class="m">–</span> Sie ausbleibende Abschlüsse grundsätzlich anderen anlasten.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05a · SELBSTTEST -->
+  <section id="selbsttest" style="background:var(--off-3)">
+    <div class="wrap">
+      <p class="secno rv"><b>05a</b> Selbsttest</p>
+      <h2 class="d2 rv">Passt das hier zu Ihnen? <span class="o">Sieben Fragen.</span></h2>
+      <p class="lede rv">Keine Punkte. Kein Score. Drei mögliche Antworten am Ende. Eine davon ist: passt klar nicht. Dann nennen wir Ihnen drei andere Adressen, die zu Ihnen passen.</p>
+
+      <div class="selftest rv">
+        <div class="stHead">
+          <span>Selbsttest</span>
+          <span class="step"><span id="qStep">Frage 01 / 07</span></span>
+        </div>
+        <div class="segments" id="qSegs" aria-hidden="true">
+          <span class="seg on"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span>
+        </div>
+        <div id="qBlock">
+          <div class="bodyGrid">
+            <div class="qnum"><span id="qNum">01</span><span class="of">von 07</span></div>
+            <div>
+              <h3 class="q-text" id="qText">Was wäre Ihnen lieber?</h3>
+              <div class="opts" id="qOpts" role="radiogroup" aria-label="Antwortmöglichkeiten"></div>
+              <div class="nav-q">
+                <button class="back" id="qBack" disabled>← Zurück</button>
+                <button class="next" id="qNext" disabled>Weiter →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="rBlock" hidden>
+          <div class="bodyGrid">
+            <div class="rletter"><span id="rLetter">A</span><span class="lbl">Ergebnis</span></div>
+            <div>
+              <h3 class="rtitle" id="rTitle"></h3>
+              <div class="rbody" id="rBody"></div>
+              <div class="ractions">
+                <a id="rCta" class="btn fill" href="#anfrage" hidden>Fundament-Check anfragen →</a>
+                <button class="restart" id="qRestart">Selbsttest erneut machen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · TEAM -->
+  <section id="team">
+    <div class="wrap">
+      <p class="secno rv"><b>06</b> Wer dahintersteht</p>
+      <h2 class="d2 rv">Zwei Menschen. <span class="o">Keine Logo-Wand.</span></h2>
+      <div class="people">
+        <div class="person rv">
+          <div class="top"><div class="ring">SB</div><div><div class="nm">Svenja Bergen</div><div class="ro">Akquise &amp; Erstkontakt</div></div></div>
+          <p>Über 15 Jahre Vertriebspraxis, quer durch Branchen. Von Automobil über Webdesign bis Verlag und Personalmanagement. Svenja führt die Gespräche selbst und merkt früh, wenn ein Angebot am Hörer nicht trägt. Sie kennt regulierte Berufsstände genauso wie technische Käufer und stellt ihren Ton pro Welt neu.</p>
+        </div>
+        <div class="person rv">
+          <div class="top"><div class="ring">JM</div><div><div class="nm">Jamie Morgan</div><div class="ro">Fundament &amp; Vertriebsarchitektur</div></div></div>
+          <p>18 Jahre B2B-Vertrieb für Unternehmen in Europa. Konzern wie Mittelstand, Deals im sechs- bis siebenstelligen Bereich. Jamie weiß, wie Kaltakquise geht, bei der am Ende nicht nur ein Auftrag steht, sondern ein bleibender Eindruck fürs Folgegeschäft. Er verantwortet die Vorklärung: Angebot, Positionierung, Wording. Industrie-, Tech- und Beratungs-Käufer-Logiken hat er gleichzeitig im Kopf.</p>
+        </div>
+      </div>
+      <div class="pilot rv"><b>Ehrlich gesagt:</b> Wir starten mit einer kleinen Zahl Pilot-Partnern. Sie finden hier keine erfundenen Zitate und keine Logo-Wand. Was wir liefern, zeigen wir im Gespräch. An Ihrem Fall, nicht an fremden.</div>
+
+      <div class="industries rv">
+        <h5>Worin wir uns auskennen</h5>
+        <div class="grid">
+          <div class="tg"><span class="t">Industrie &amp; Anlagenbau</span><span class="sub">Anlagenbau · Sondermaschinen · MES</span></div>
+          <div class="tg"><span class="t">IT &amp; Cybersecurity</span><span class="sub">CISO · Pen-Test · Identity &amp; Access</span></div>
+          <div class="tg"><span class="t">SAP &amp; ERP</span><span class="sub">S/4HANA · Migrationen · Mittelstand</span></div>
+          <div class="tg"><span class="t">Steuer &amp; Recht</span><span class="sub">Steuerberatung · Wirtschaftsprüfung · Compliance</span></div>
+          <div class="tg"><span class="t">Coaching &amp; Beratung</span><span class="sub">Executive · Mittelstand · Solo-Berater</span></div>
+          <div class="tg"><span class="t">Spezialagenturen</span><span class="sub">Brand · Performance · Editorial</span></div>
+          <div class="tg"><span class="t">Architektur &amp; Bau</span><span class="sub">Büroplanung · Nachhaltigkeit · LP 1–5</span></div>
+          <div class="tg"><span class="t">Energie &amp; Nachhaltigkeit</span><span class="sub">Audits · ESG · Effizienz</span></div>
+          <div class="tg"><span class="t">Personalmanagement</span><span class="sub">Recruiting · Employer Branding · HR-Beratung</span></div>
+        </div>
+        <p class="note">Branchen, in denen wir gesprochen haben. Wenn Ihre nicht dabei ist: sagen Sie es im Erstgespräch. Wir gehen ehrlich damit um.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 · FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <p class="secno rv"><b>07</b> Was Sie sich fragen</p>
+      <h2 class="d2 rv" style="margin-bottom:clamp(34px,4vw,52px)">Klartext. <span class="o">Keine Floskeln.</span></h2>
+      <div class="acc rv">
+        <details>
+          <summary><span class="tag">F 01</span><span class="h">Wen schickt ihr in meinem Namen ans Telefon?</span><span class="pl">+</span></summary>
+          <div class="bd">Svenja. Persönlich. Keine wechselnde Aushilfe, kein angelerntes Team. Wen wir konkret ansprechen, stimmen wir vorher mit Ihnen ab. Sie entscheiden mit, statt sich hinterher zu wundern, wer da angerufen hat.</div>
+        </details>
+        <details>
+          <summary><span class="tag">F 02</span><span class="h">Behalte ich meine warmen Kontakte selbst?</span><span class="pl">+</span></summary>
+          <div class="bd">Ja. Wir übernehmen die kalte Erstansprache bis zum qualifizierten Termin. Sobald eine Beziehung da ist, gehört sie Ihnen. Die pflegen Sie selbst weiter.</div>
+        </details>
+        <details>
+          <summary><span class="tag">F 03</span><span class="h">Was, wenn das Fundament nicht trägt?</span><span class="pl">+</span></summary>
+          <div class="bd">Dann telefonieren wir nicht trotzdem. Sie bekommen Klarheit statt einer verbrannten Kampagne. Und Ihr Ruf bleibt heil. Genau dafür gibt es den Check.</div>
+        </details>
+        <details>
+          <summary><span class="tag">F 04</span><span class="h">Warum nicht der günstige Anbieter?</span><span class="pl">+</span></summary>
+          <div class="bd">Weil billig oft heißt: Schein-Termine, künstlich in den Kalender getragen, damit überhaupt etwas vorzeigbar ist. Das füllt einen Kalender. Und kostet Sie Ihren Ruf im Markt. Wir setzen keine Schein-Termine.</div>
+        </details>
+        <details>
+          <summary><span class="tag">F 05</span><span class="h">Wie viele Gespräche sind realistisch?</span><span class="pl">+</span></summary>
+          <div class="bd">Kein „20+ im Monat"-Versprechen. Svenja schafft 15–20 qualifizierte Gespräche am Tag. Aber die Zahl entscheidet nicht über die Qualität. Sechs Kunden im Jahr, mehr nehmen wir nicht.</div>
+        </details>
+        <details>
+          <summary><span class="tag">F 06</span><span class="h">Was, wenn ich Akquise lieber selbst lernen will?</span><span class="pl">+</span></summary>
+          <div class="bd">Können Sie. Wir helfen beim Schärfen Ihres Angebots, das ist die meiste Lern-Arbeit ohnehin. Wenn Sie danach selbst telefonieren wollen: gut. Wenn nicht: wir machen weiter. Wir verkaufen Ihnen keinen Kurs.</div>
+        </details>
+        <details>
+          <summary><span class="tag">F 07</span><span class="h">Wie kommen wir wieder auseinander, wenn es nicht passt?</span><span class="pl">+</span></summary>
+          <div class="bd">Mindestlaufzeit drei Monate. Danach jeden Monat kündbar. Übergabe Ihrer warmen Kontakte sauber dokumentiert. Kein Daten-Tunnel, kein Vertragsverstecken. Eine Beziehung muss freiwillig sein.</div>
+        </details>
+        <details>
+          <summary><span class="tag">F 08</span><span class="h">Was, wenn Sie meine Branche fachlich nicht kennen?</span><span class="pl">+</span></summary>
+          <div class="bd">Drei Tage Einlesen vor dem ersten Wort. Wenn wir nach diesen drei Tagen merken, dass wir Ihre Materie fachlich nicht tragen, sagen wir ab. Ehrlichkeit vor Umsatz, auch hier.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 · CTA -->
+  <section id="anfrage" class="sec-petrol">
+    <div class="wrap">
+      <p class="secno rv"><b>08</b> Der nächste Schritt</p>
+      <h2 class="d2 rv">Fundament-Check <span class="o">anfragen.</span></h2>
+      <div class="cta-grid">
+        <div class="rv">
+          <p class="lede">Kein Verkaufsgespräch. Eine Prüfung: Trägt Ihr Angebot am Telefon? Sagen Sie uns kurz, worum es geht. Wir melden uns persönlich zurück.</p>
+          <a class="cmail" href="mailto:kontakt@morgan-bergen.de?subject=Fundament-Check%20anfragen">
+            <span class="k">E-Mail</span><span class="v">kontakt@morgan-bergen.de</span>
+          </a>
+          <a class="cmail" href="#" aria-disabled="true" style="margin-top:20px;opacity:.6;cursor:not-allowed">
+            <span class="k">Für interne Abstimmung</span><span class="v">Briefing-PDF folgt</span>
+          </a>
+        </div>
+        <form class="formcard rv" onsubmit="return false;">
+          <p class="formhint">Vertraulich<span>·</span>Keine Bewertung im Erstgespräch<span>·</span>Antwort innerhalb 48 Stunden</p>
+          <div class="f"><label for="n">Name</label><input id="n" type="text" autocomplete="name" placeholder="Vor- und Nachname"></div>
+          <div class="f"><label for="e">E-Mail</label><input id="e" type="email" autocomplete="email" placeholder="ihre@firma.de"></div>
+          <div class="f"><label for="m">Worum geht es?</label><textarea id="m" rows="2" placeholder="In einem Satz: Was bieten Sie wem an?"></textarea></div>
+          <button type="submit">Fundament-Check anfragen</button>
+          <p class="note">Vertraulich · kein Newsletter · kein Verteiler</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="fgrid">
+        <div>
+          <a href="#top" class="brand"><span class="nm" style="font-size:20px">Morgan<span class="dot">&amp;</span>Bergen</span><span class="sub">Vertriebsarbeit · Nürnberg · DACH</span></a>
+          <p style="margin-top:16px;max-width:300px">Vertriebsdienstleistung mit Fundament-Check vor Akquise. Sechs Mandate im Jahr.</p>
+        </div>
+        <div>
+          <div class="ft">Kontakt</div>
+          <a href="mailto:kontakt@morgan-bergen.de">kontakt@morgan-bergen.de</a>
+          <p>Telefon auf Anfrage</p>
+          <p style="margin-top:10px;font-size:13px;color:var(--cap)">Standort Nürnberg · DACH-weit tätig</p>
+        </div>
+        <div>
+          <div class="ft">Rechtliches</div>
+          <a href="#" class="soon" aria-disabled="true">Impressum (folgt)</a>
+          <a href="#" class="soon" aria-disabled="true">Datenschutz (folgt)</a>
+          <p style="font-size:12px;color:var(--cap);margin-top:8px">Werden mit der Live-Schaltung ergänzt.</p>
+        </div>
+      </div>
+      <div class="fbot">
+        <span>© 2026 Morgan &amp; Bergen</span>
+        <span class="claim">Vertriebsarbeit, die hält.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="scta"><a href="#anfrage">Fundament-Check anfragen</a></div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    (function(){
+      var b=document.getElementById('burger'),m=document.getElementById('mnav');
+      if(b&&m){b.addEventListener('click',function(){var o=getComputedStyle(m).display==='none';m.style.display=o?'block':'none';b.setAttribute('aria-expanded',String(o));});
+        m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.style.display='none';b.setAttribute('aria-expanded','false');});});}
+
+      var s=document.getElementById('scta'),an=document.getElementById('anfrage');
+      window.addEventListener('scroll',function(){var near=an&&an.getBoundingClientRect().top<innerHeight*0.9;
+        if(scrollY>innerHeight*1.3&&!near)s.classList.add('show');else s.classList.remove('show');},{passive:true});
+
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+      document.querySelectorAll('.rv').forEach(function(e){io.observe(e);});
+
+      var sl=document.getElementById('slider'),av=document.getElementById('av'),lo=document.getElementById('loss'),l3=document.getElementById('loss3');
+      function fmt(n){return Math.round(n).toLocaleString('de-DE');}
+      function upd(){var v=+sl.value;av.textContent=fmt(v);lo.textContent=fmt(v*3);l3.textContent=fmt(v*3*3);}
+      if(sl){sl.addEventListener('input',upd);upd();}
+
+      // ─── SELBSTTEST ───────────────────────────────────────────────────────
+      var QUIZ=[
+        {q:'Was wäre Ihnen lieber?',
+         a:[
+           {t:'Sechs gute Kunden, die bleiben.',w:2},
+           {t:'Mehr Planbarkeit, ohne Vollauslastung.',w:1},
+           {t:'So viel Reichweite wie möglich, so schnell wie möglich.',w:0}
+         ]},
+        {q:'Wie kommen heute neue Kunden zu Ihnen?',
+         a:[
+           {t:'Empfehlungen tragen, aber es klafft eine Lücke, wenn die wegfallen.',w:2},
+           {t:'Wir machen wenig Akquise und merken, dass das nicht mehr reicht.',w:1},
+           {t:'Wir brauchen viele Termine, schnell und billig.',w:0}
+         ]},
+        {q:'Was würden Sie zur Prüfung freigeben, bevor wir telefonieren?',
+         a:[
+           {t:'Angebot, Positionierung und Wording. Komplett.',w:2},
+           {t:'Das Wesentliche. Bei Bedarf auch mehr.',w:1},
+           {t:'Nur das Nötigste. Das Telefon soll laufen.',w:0}
+         ]},
+        {q:'Wer entscheidet, mit wem in Ihrem Namen gesprochen wird?',
+         a:[
+           {t:'Sie und wir, gemeinsam. Wir sagen ab, wenn etwas nicht passt.',w:2},
+           {t:'Sie. Wir bringen den Vorschlag, Sie geben den Rahmen.',w:1},
+           {t:'Egal. Hauptsache es wird angerufen.',w:0}
+         ]},
+        {q:'Wie viele neue Kunden brauchen Sie pro Jahr?',
+         a:[
+           {t:'Drei bis sechs, mit Tiefe.',w:2},
+           {t:'Sechs bis zwölf, qualifiziert.',w:1},
+           {t:'Mehr als zwölf. Volumen.',w:0}
+         ]},
+        {q:'Trägt Ihr Angebot, wenn am Telefon eine ehrliche Frage zurückkommt?',
+         a:[
+           {t:'Ich glaube ja, möchte aber prüfen lassen.',w:2},
+           {t:'Bin mir unsicher. Genau deswegen lese ich hier.',w:1},
+           {t:'Wir wollen anrufen, das Angebot ist nicht die Baustelle.',w:0}
+         ]},
+        {q:'Was wäre für Sie schlimmer?',
+         a:[
+           {t:'Ein schlechter Anruf in meinem Namen, der sich im Markt rumspricht.',w:2},
+           {t:'Beides gleich schlimm.',w:1},
+           {t:'Ein Quartal ohne neue Kunden.',w:0}
+         ]}
+      ];
+      var RESULTS={
+        A:{
+          title:'Passt. <span class="o">Beidseitig.</span>',
+          body:'<p>Ihre Antworten passen zu der Art, wie wir arbeiten. Sechs Kunden im Jahr, Substanz vor Volumen, kein Anruf bevor das Fundament steht.</p><p>Wenn Sie wollen, schauen wir uns Ihr Angebot, Ihre Positionierung und Ihr Wording an. Eine Stunde, in Ruhe. Wenn etwas nicht trägt, sagen wir es. Wenn wir Sie nicht tragen können, sagen wir ab.</p>',
+          showCta:true
+        },
+        B:{
+          title:'Bedingt. <span class="o">Reden wir.</span>',
+          body:'<p>Ein paar Antworten deuten in unsere Richtung, andere in eine andere. Das ist kein K.o.</p><p>Bevor jemand von uns telefoniert, müssten wir prüfen, ob Ihr Angebot, Ihre Positionierung und Ihr Wording das tragen, was wir am Telefon vertreten würden. Das geht in einem Gespräch. Wir sagen Ihnen dort, ob es passt. Wenn nicht, mit Begründung.</p>',
+          showCta:true
+        },
+        C:{
+          title:'Passt nicht. <span class="o">Mit Respekt.</span>',
+          body:'<p>Was Sie suchen, ist nicht das, was wir bauen. Sie brauchen wahrscheinlich Volumen, schnelle Termine, einen breiteren Trichter. Wir machen das Gegenteil: sechs Kunden im Jahr, langes Vorgespräch, Absage-Recht beidseitig.</p><p>Damit Sie hier nicht umsonst gelandet sind: Drei Anlaufstellen, die in unserem Umfeld einen guten Ruf haben und Volumen seriös aufstellen:</p><ul style="list-style:none;padding-left:0;margin-top:8px"><li style="padding:6px 0;border-top:1px solid var(--line-2)"><strong style="color:var(--petrol)">Akquisebüro Moser</strong> · klassische Telefonakquise mit Methodik</li><li style="padding:6px 0;border-top:1px solid var(--line-2)"><strong style="color:var(--petrol)">Stephan Heinrich</strong> · Vertriebs-Coaching für komplexe B2B-Verkäufe</li><li style="padding:6px 0;border-top:1px solid var(--line-2)"><strong style="color:var(--petrol)">Tobias Ain</strong> · Sales-Training für mittelständische Vertriebsteams</li></ul><p style="margin-top:14px;font-style:italic;color:var(--cap)">Wir bekommen für diesen Hinweis nichts. Wir kennen den Markt.</p>',
+          showCta:false
+        }
+      };
+
+      (function(){
+        var qNum=document.getElementById('qNum'),qStep=document.getElementById('qStep'),
+            qText=document.getElementById('qText'),qOpts=document.getElementById('qOpts'),
+            qBack=document.getElementById('qBack'),qNext=document.getElementById('qNext'),
+            qBlock=document.getElementById('qBlock'),qSegs=document.getElementById('qSegs'),
+            rBlock=document.getElementById('rBlock'),rTitle=document.getElementById('rTitle'),
+            rBody=document.getElementById('rBody'),rCta=document.getElementById('rCta'),
+            rLetter=document.getElementById('rLetter'),qRestart=document.getElementById('qRestart');
+        if(!qNum||!qOpts)return;
+        var idx=0,answers=new Array(QUIZ.length).fill(null);
+        var ROMAN=['i','ii','iii','iv','v'];
+        function pad2(n){return n<10?'0'+n:''+n;}
+        function updateSegs(upto){
+          var segs=qSegs.querySelectorAll('.seg');
+          for(var i=0;i<segs.length;i++){if(i<upto)segs[i].classList.add('on');else segs[i].classList.remove('on');}
+        }
+        function render(){
+          var q=QUIZ[idx];
+          qNum.textContent=pad2(idx+1);
+          qStep.textContent='Frage '+pad2(idx+1)+' / '+pad2(QUIZ.length);
+          updateSegs(idx+1);
+          qText.textContent=q.q;
+          qOpts.innerHTML='';
+          q.a.forEach(function(opt,i){
+            var btn=document.createElement('button');
+            btn.type='button';
+            btn.setAttribute('role','radio');
+            btn.setAttribute('aria-checked',answers[idx]===i?'true':'false');
+            btn.className='opt'+(answers[idx]===i?' sel':'');
+            btn.innerHTML='<span class="ix">'+ROMAN[i]+'</span><span class="txt">'+opt.t+'</span>';
+            btn.addEventListener('click',function(){
+              answers[idx]=i;
+              Array.prototype.forEach.call(qOpts.querySelectorAll('.opt'),function(o){o.classList.remove('sel');o.setAttribute('aria-checked','false');});
+              btn.classList.add('sel');btn.setAttribute('aria-checked','true');
+              qNext.disabled=false;
+            });
+            qOpts.appendChild(btn);
+          });
+          qBack.disabled=(idx===0);
+          qNext.disabled=(answers[idx]===null);
+          qNext.textContent=(idx===QUIZ.length-1?'Ergebnis anzeigen →':'Weiter →');
+        }
+        function finish(){
+          var score=answers.reduce(function(s,a,i){return s+(a===null?0:QUIZ[i].a[a].w);},0);
+          var key=score>=11?'A':(score>=6?'B':'C');
+          var r=RESULTS[key];
+          rTitle.innerHTML=r.title;
+          rBody.innerHTML=r.body;
+          rLetter.textContent=key;
+          if(r.showCta){rCta.hidden=false;}else{rCta.hidden=true;}
+          updateSegs(QUIZ.length);
+          qStep.textContent='Ergebnis';
+          qBlock.hidden=true;
+          rBlock.hidden=false;
+          var card=document.querySelector('#selbsttest .selftest');
+          if(card){var top=card.getBoundingClientRect().top+window.pageYOffset-90;window.scrollTo({top:top,behavior:'smooth'});}
+        }
+        qNext.addEventListener('click',function(){
+          if(idx<QUIZ.length-1){idx++;render();}
+          else{finish();}
+        });
+        qBack.addEventListener('click',function(){
+          if(idx>0){idx--;render();}
+        });
+        qRestart.addEventListener('click',function(){
+          idx=0;answers=new Array(QUIZ.length).fill(null);
+          qBlock.hidden=false;rBlock.hidden=true;
+          render();
+          var card=document.querySelector('#selbsttest .selftest');
+          if(card){var top=card.getBoundingClientRect().top+window.pageYOffset-90;window.scrollTo({top:top,behavior:'smooth'});}
+        });
+        render();
+      })();
+    })();
+  </script>
+
+</body>
+</html>

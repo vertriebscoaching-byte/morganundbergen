@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danke — Morgan &amp; Bergen</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1E3A3A">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%231E3A3A'/%3E%3Ctext x='25%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='%23F7F5F2'%3EM%3C/text%3E%3Ctext x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='%23D9601E'%3E%26amp;%3C/text%3E%3Ctext x='75%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='%23F7F5F2'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --off:#F7F5F2; --petrol:#1E3A3A; --deep:#0E1F1F;
+      --orange:#D9601E; --orange-soft:#EFA76A;
+      --p-text:rgba(247,245,242,.92); --p-sub:rgba(247,245,242,.7); --p-cap:rgba(247,245,242,.55);
+      --p-line:rgba(247,245,242,.14); --p-line-2:rgba(247,245,242,.26);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background:var(--petrol);color:var(--p-text);
+      font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.65;
+      -webkit-font-smoothing:antialiased;
+      min-height:100vh;display:flex;align-items:center;justify-content:center;
+      padding:clamp(40px,8vw,80px);position:relative;overflow:hidden;
+    }
+    body::before{
+      content:'';position:absolute;inset:0;pointer-events:none;
+      background:
+        radial-gradient(70% 50% at 20% 0%, rgba(217,96,30,.12), transparent 60%),
+        radial-gradient(60% 50% at 100% 100%, rgba(217,96,30,.08), transparent 60%);
+    }
+    body::after{
+      content:'';position:fixed;inset:0;pointer-events:none;opacity:.04;mix-blend-mode:overlay;
+      background-image:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size:240px 240px;
+    }
+    .card{
+      position:relative;z-index:2;max-width:680px;width:100%;text-align:center;
+    }
+    .check{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:72px;height:72px;border-radius:50%;
+      background:rgba(217,96,30,.14);border:1px solid rgba(217,96,30,.4);color:var(--orange-soft);
+      margin-bottom:clamp(28px,4vw,40px);
+      animation:in .8s cubic-bezier(.16,.84,.28,1) forwards;opacity:0;transform:scale(.92);
+    }
+    .check svg{width:34px;height:34px}
+    @keyframes in{to{opacity:1;transform:scale(1)}}
+    .ey{
+      font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;
+      color:var(--p-cap);font-weight:600;margin-bottom:24px;display:inline-flex;align-items:center;gap:12px;
+      opacity:0;animation:fadeIn .8s ease-out .2s forwards;
+    }
+    .ey .dot{width:6px;height:6px;border-radius:50%;background:var(--orange-soft)}
+    h1{
+      font-family:'Newsreader',Georgia,serif;font-weight:500;font-variation-settings:"opsz" 72;
+      font-size:clamp(36px,6vw,72px);line-height:1.02;letter-spacing:-.018em;color:var(--off);
+      text-wrap:balance;margin-bottom:24px;
+      opacity:0;animation:fadeIn .8s ease-out .35s forwards;
+    }
+    h1 .o{font-style:italic;font-weight:400;color:var(--orange-soft);font-variation-settings:"opsz" 72}
+    .lede{
+      font-size:clamp(17px,1.4vw,21px);line-height:1.62;color:var(--p-sub);
+      max-width:520px;margin:0 auto 36px;
+      opacity:0;animation:fadeIn .8s ease-out .5s forwards;
+    }
+    .lede strong{color:var(--off);font-weight:600}
+    @keyframes fadeIn{to{opacity:1}}
+    .meta{
+      display:grid;grid-template-columns:1fr 1fr;gap:24px;
+      margin:clamp(36px,5vw,52px) auto;max-width:520px;
+      padding:24px;border:1px solid var(--p-line-2);border-radius:10px;
+      background:rgba(14,31,31,.4);backdrop-filter:blur(6px);
+      opacity:0;animation:fadeIn .8s ease-out .65s forwards;
+    }
+    .meta > div{text-align:left}
+    .meta .k{font-family:'Plus Jakarta Sans',sans-serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--p-cap);font-weight:600;margin-bottom:6px}
+    .meta .v{font-family:'Newsreader',serif;font-weight:500;font-size:16px;color:var(--off);font-variation-settings:"opsz" 36;letter-spacing:-.005em}
+    .meta .v a{color:var(--orange-soft);text-decoration:none;border-bottom:1px dashed rgba(239,167,106,.4);transition:border-color .2s}
+    .meta .v a:hover{border-bottom-color:var(--orange-soft)}
+    .actions{
+      display:inline-flex;flex-wrap:wrap;gap:14px;justify-content:center;
+      opacity:0;animation:fadeIn .8s ease-out .8s forwards;
+    }
+    .btn{
+      display:inline-flex;align-items:center;gap:12px;
+      font-family:'Plus Jakarta Sans',sans-serif;font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;
+      padding:17px 28px;border-radius:8px;border:1px solid transparent;
+      transition:transform .2s,background .2s,border-color .2s,box-shadow .2s;
+    }
+    .btn.fill{background:var(--orange);color:var(--off);border-color:var(--orange)}
+    .btn.fill:hover{transform:translateY(-2px);background:#C8581C;box-shadow:0 12px 30px -10px rgba(217,96,30,.5)}
+    .btn.ghost{background:transparent;color:var(--off);border-color:var(--p-line-2)}
+    .btn.ghost:hover{border-color:var(--off);transform:translateY(-2px)}
+    .brand{
+      position:absolute;top:32px;left:50%;transform:translateX(-50%);z-index:2;
+      font-family:'Newsreader',serif;font-weight:600;font-size:18px;color:var(--off);letter-spacing:-.005em;
+      font-variation-settings:"opsz" 36;
+    }
+    .brand .amp{color:var(--orange-soft);margin:0 .18em;font-style:italic;font-weight:500}
+    .footer-line{
+      position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:2;
+      font-family:'Plus Jakarta Sans',sans-serif;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;
+      color:var(--p-cap);font-weight:500;
+    }
+    @media (prefers-reduced-motion: reduce){
+      *{animation-duration:.001ms!important}
+    }
+    @media (max-width:520px){
+      .meta{grid-template-columns:1fr;gap:16px}
+      .brand{top:20px}
+    }
+  </style>
+</head>
+<body>
+  <a href="/" class="brand">Morgan<span class="amp">&amp;</span>Bergen</a>
+
+  <div class="card">
+    <div class="check" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <p class="ey"><span class="dot"></span>Anfrage angekommen</p>
+    <h1>Danke. Wir <span class="o">melden uns persönlich.</span></h1>
+    <p class="lede">Ihre Anfrage liegt bei uns. <strong>Innerhalb von 48 Stunden</strong> bekommen Sie eine direkte Rückmeldung — entweder von Svenja oder von Jamie, je nachdem, wer schneller im Postfach ist.</p>
+
+    <div class="meta">
+      <div>
+        <div class="k">Sollten Sie zwischendurch</div>
+        <div class="v"><a href="mailto:kontakt@morgan-bergen.de">kontakt@morgan-bergen.de</a></div>
+      </div>
+      <div>
+        <div class="k">Was als Nächstes passiert</div>
+        <div class="v">Kurzer Rückruf zum Anliegen.</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a href="/" class="btn ghost">Zurück zur Startseite</a>
+    </div>
+  </div>
+
+  <span class="footer-line">© Morgan &amp; Bergen · Nürnberg · DACH</span>
+</body>
+</html>

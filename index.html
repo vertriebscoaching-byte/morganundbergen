@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morgan &amp; Bergen — Vertriebsarbeit, die hält.</title>
+  <meta name="description" content="Wer in Ihrem Namen anruft, prägt Ihren Ruf. Wir prüfen Angebot, Positionierung und Wording, bevor in Ihrem Namen telefoniert wird. Trägt es nicht, sagen wir ab. Vertriebsdienstleistung für Berater, kleine B2B-Dienstleister, Coaches und Spezialagenturen in der DACH-Region.">
+  <meta property="og:title" content="Morgan &amp; Bergen — Wer in Ihrem Namen anruft, prägt Ihren Ruf.">
+  <meta property="og:description" content="Fundament-Check vor Akquise. Geprüft, bevor ein schlechter Anruf Ihren Ruf kostet.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta name="theme-color" content="#1E3A3A">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%231E3A3A'/%3E%3Ctext x='25%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='%23F7F5F2'%3EM%3C/text%3E%3Ctext x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='%23D9601E'%3E%26amp;%3C/text%3E%3Ctext x='75%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='%23F7F5F2'%3EB%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,500;1,6..72,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─── TOKENS ──────────────────────────────────────────────────────── */
+    :root{
+      --off:#F7F5F2; --off-2:#FBF9F4; --off-3:#F2EEE6; --off-4:#ECE6DA;
+      --petrol:#1E3A3A; --petrol-2:#16302F; --petrol-3:#244746; --deep:#0E1F1F;
+      --orange:#D9601E; --orange-deep:#B0480F; --orange-soft:#EFA76A; --orange-glow:rgba(217,96,30,.18);
+      --neutral:#6B7575; --cap:#5E6A6A; --txt:#2E3838; --mute:#7A8585;
+      --line:rgba(30,58,58,.12); --line-2:rgba(30,58,58,.22); --line-3:rgba(30,58,58,.36);
+      --p-text:rgba(247,245,242,.92); --p-sub:rgba(247,245,242,.7); --p-cap:rgba(247,245,242,.55); --p-line:rgba(247,245,242,.14); --p-line-2:rgba(247,245,242,.26);
+      --pad:clamp(22px,5vw,88px); --maxw:1280px; --maxw-narrow:1080px;
+      --rad:10px; --rad-l:14px;
+      --t-fast:.18s cubic-bezier(.2,.7,.3,1);
+      --t-med:.32s cubic-bezier(.2,.7,.3,1);
+      --t-slow:.7s cubic-bezier(.16,.84,.28,1);
+      --shadow-soft:0 1px 2px rgba(30,58,58,.04), 0 8px 24px -8px rgba(30,58,58,.08);
+      --shadow-deep:0 2px 4px rgba(14,31,31,.18), 0 24px 60px -20px rgba(14,31,31,.32);
+    }
+
+    /* ─── RESET ───────────────────────────────────────────────────────── */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden}
+    body{
+      background:var(--off);color:var(--txt);
+      font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:400;line-height:1.65;
+      -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+      font-feature-settings:"kern" 1,"liga" 1,"ss01" 1;
+      overflow-x:hidden;position:relative;min-height:100vh;
+    }
+    a{color:inherit;text-decoration:none}
+    img,svg{display:block;max-width:100%}
+    button,input,textarea,select{font:inherit;color:inherit}
+    ::selection{background:var(--orange);color:var(--off)}
+    :focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:3px}
+
+    /* ─── GRAIN OVERLAY ───────────────────────────────────────────────── */
+    body::before{
+      content:'';position:fixed;inset:0;pointer-events:none;z-index:1;mix-blend-mode:multiply;opacity:.04;
+      background-image:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size:240px 240px;
+    }
+
+    /* ─── SCROLL PROGRESS ─────────────────────────────────────────────── */
+    .prog{position:fixed;top:0;left:0;height:2px;background:var(--orange);width:0;z-index:80;transition:width .08s linear;box-shadow:0 0 12px var(--orange-glow)}
+
+    /* ─── LAYOUT ──────────────────────────────────────────────────────── */
+    .wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);position:relative}
+    .wrap.narrow{max-width:var(--maxw-narrow)}
+    section{padding:clamp(80px,11vw,156px) 0;position:relative;z-index:2}
+    section + section{border-top:1px solid var(--line)}
+    .sec-petrol + section, section + .sec-petrol{border-top:0}
+
+    /* ─── TYPOGRAPHY ──────────────────────────────────────────────────── */
+    h1,h2,h3{
+      font-family:'Newsreader',Georgia,serif;
+      font-optical-sizing:auto;font-variation-settings:"opsz" 72;
+      font-weight:500;line-height:1.02;letter-spacing:-.018em;color:var(--petrol);
+      text-wrap:balance;hyphens:manual;
+    }
+    h3{font-weight:600;line-height:1.18;letter-spacing:-.01em}
+    .d0{font-size:clamp(50px,8.6vw,128px);line-height:.98}
+    .d1{font-size:clamp(42px,7vw,108px);line-height:1.0}
+    .d2{font-size:clamp(32px,5vw,76px);line-height:1.05}
+    .d3{font-size:clamp(22px,2.4vw,32px);line-height:1.2;font-weight:600}
+    .o{font-family:'Newsreader',serif;font-style:italic;font-weight:400;color:var(--orange);font-variation-settings:"opsz" 72}
+    .lede{font-size:clamp(17px,1.35vw,21px);line-height:1.62;color:var(--txt);max-width:640px;margin-top:30px;font-weight:400}
+    .lede .o{font-family:'Plus Jakarta Sans',sans-serif;font-style:normal;font-weight:700;color:var(--orange-deep)}
+    p.body{font-size:16px;line-height:1.72;color:var(--txt)}
+    .quote{
+      border-left:2px solid var(--orange);padding-left:26px;
+      font-family:'Newsreader',serif;font-style:italic;font-weight:400;font-variation-settings:"opsz" 36;
+      font-size:clamp(19px,1.6vw,26px);line-height:1.45;color:var(--petrol);
+      max-width:680px;
+    }
+
+    /* ─── LABELS / MICRO ──────────────────────────────────────────────── */
+    .cap,.mono,.secno{font-family:'Plus Jakarta Sans',sans-serif;text-transform:uppercase;letter-spacing:.18em;font-weight:600;font-size:11.5px;color:var(--cap)}
+    .secno{font-size:11.5px;margin-bottom:clamp(28px,4vw,46px);display:inline-flex;align-items:center;gap:14px}
+    .secno .dot{width:6px;height:6px;border-radius:50%;background:var(--orange);position:relative}
+    .secno .dot::after{content:'';position:absolute;inset:-5px;border-radius:50%;border:1px solid var(--orange);opacity:.35;animation:pulse 2.4s ease-out infinite}
+    .secno b{font-family:'Newsreader',serif;font-style:italic;font-weight:500;color:var(--orange);font-size:1.25em;letter-spacing:0;font-variation-settings:"opsz" 36}
+    @keyframes pulse{0%{transform:scale(.7);opacity:.5}70%{transform:scale(2.4);opacity:0}100%{opacity:0}}
+
+    .ey{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--p-cap);font-weight:600;display:inline-flex;align-items:center;gap:12px}
+    .ey b{color:var(--orange-soft);font-weight:700}
+    .ey .dot{width:6px;height:6px;border-radius:50%;background:var(--orange);position:relative}
+    .ey .dot::after{content:'';position:absolute;inset:-5px;border-radius:50%;border:1px solid var(--orange-soft);opacity:.4;animation:pulse 2.4s ease-out infinite}
+
+    /* ─── BUTTONS ─────────────────────────────────────────────────────── */
+    .btn{
+      display:inline-flex;align-items:center;gap:12px;
+      font-family:'Plus Jakarta Sans',sans-serif;font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;
+      padding:17px 28px;border-radius:8px;border:1px solid transparent;cursor:pointer;position:relative;overflow:hidden;
+      transition:transform var(--t-fast),background var(--t-fast),color var(--t-fast),border-color var(--t-fast),box-shadow var(--t-fast);
+      will-change:transform;
+    }
+    .btn::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.18) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s cubic-bezier(.2,.7,.3,1);pointer-events:none}
+    .btn:hover::before{transform:translateX(120%)}
+    .btn span.arr{display:inline-block;transition:transform var(--t-fast)}
+    .btn:hover span.arr{transform:translateX(4px)}
+    .btn.fill{background:var(--orange);color:var(--off);border-color:var(--orange)}
+    .btn.fill:hover{transform:translateY(-2px);background:#C8581C;box-shadow:0 12px 30px -10px rgba(217,96,30,.5)}
+    .btn.ghost{background:transparent;color:var(--petrol);border-color:var(--line-2)}
+    .btn.ghost:hover{border-color:var(--petrol);transform:translateY(-2px)}
+
+    /* ─── HEADER ──────────────────────────────────────────────────────── */
+    header{position:sticky;top:0;z-index:60;background:rgba(30,58,58,.78);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border-bottom:1px solid var(--p-line);transition:background var(--t-med),border-color var(--t-med)}
+    header.scrolled{background:rgba(14,31,31,.94);border-bottom-color:var(--p-line-2)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:24px}
+    .brand{display:flex;flex-direction:column;line-height:1;gap:6px}
+    .brand .nm{font-family:'Newsreader',serif;font-weight:600;font-size:23px;letter-spacing:-.008em;color:var(--off);font-variation-settings:"opsz" 36}
+    .brand .nm .amp{color:var(--orange-soft);margin:0 .18em;font-style:italic;font-weight:500}
+    .brand .sub{font-family:'Plus Jakarta Sans',sans-serif;font-size:9.5px;letter-spacing:.26em;color:var(--p-cap);text-transform:uppercase;font-weight:600}
+    .nlinks{display:flex;align-items:center;gap:32px}
+    .nlinks a{font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--p-sub);font-weight:600;transition:color var(--t-fast);position:relative}
+    .nlinks a:hover{color:var(--orange-soft)}
+    .nlinks a::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--orange-soft);transform:scaleX(0);transform-origin:left;transition:transform var(--t-med)}
+    .nlinks a:hover::after{transform:scaleX(1)}
+    .ncta{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;background:var(--orange);color:var(--off);padding:12px 18px;border-radius:7px;transition:transform var(--t-fast),box-shadow var(--t-fast);position:relative;overflow:hidden}
+    .ncta::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.22) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s cubic-bezier(.2,.7,.3,1)}
+    .ncta:hover::before{transform:translateX(120%)}
+    .ncta:hover{transform:translateY(-1px);box-shadow:0 10px 24px -8px rgba(217,96,30,.5)}
+    .burger{display:none;background:none;border:0;color:var(--off);width:42px;height:42px;cursor:pointer;align-items:center;justify-content:center}
+    .burger svg{width:22px;height:22px}
+    #mnav{display:none;border-top:1px solid var(--p-line);background:var(--petrol-2)}
+    #mnav a{display:block;padding:16px var(--pad);font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--off);border-bottom:1px solid var(--p-line);transition:color var(--t-fast),padding-left var(--t-fast)}
+    #mnav a:hover{color:var(--orange-soft);padding-left:calc(var(--pad) + 8px)}
+
+    /* ─── PETROL VARIANTS ─────────────────────────────────────────────── */
+    .sec-petrol{background:var(--petrol);color:var(--p-text);position:relative;overflow:hidden}
+    .sec-petrol::before{
+      content:'';position:absolute;inset:0;pointer-events:none;
+      background:
+        radial-gradient(70% 50% at 8% 0%, rgba(217,96,30,.10), transparent 65%),
+        radial-gradient(60% 50% at 100% 100%, rgba(217,96,30,.06), transparent 60%);
+    }
+    .sec-petrol > *{position:relative;z-index:1}
+    .sec-petrol h1,.sec-petrol h2,.sec-petrol h3{color:var(--off)}
+    .sec-petrol .o{color:var(--orange-soft)}
+    .sec-petrol .lede{color:var(--p-sub)}
+    .sec-petrol .lede .o{color:var(--orange-soft)}
+    .sec-petrol .secno,.sec-petrol .mono,.sec-petrol .cap{color:var(--p-cap)}
+    .sec-petrol .secno b{color:var(--orange-soft)}
+    .sec-petrol .btn.ghost{color:var(--off);border-color:var(--p-line-2)}
+    .sec-petrol .btn.ghost:hover{border-color:var(--off)}
+    .sec-petrol .quote{color:var(--off);border-left-color:var(--orange-soft)}
+
+    /* ─── REVEAL ──────────────────────────────────────────────────────── */
+    .rv{opacity:0;transform:translateY(20px);transition:opacity .8s var(--t-slow),transform .8s var(--t-slow)}
+    .rv.in{opacity:1;transform:translateY(0)}
+    .rv.d1{transition-delay:.05s} .rv.d2{transition-delay:.12s} .rv.d3{transition-delay:.2s}
+
+    /* ─── HERO (full-bleed background composition) ───────────────────── */
+    .hero{position:relative;overflow:hidden;padding:clamp(110px,16vh,180px) 0 clamp(96px,13vw,160px);min-height:min(900px,92vh);display:flex;align-items:center}
+    .hero::before,.hero::after{display:none!important}
+    .hero-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
+    .hero-bg-img{position:absolute;top:0;bottom:0;width:58%;background-size:cover;background-repeat:no-repeat;filter:grayscale(.08) contrast(1.06) brightness(.86);opacity:0;animation:bgIn 1.4s cubic-bezier(.16,.84,.28,1) .2s forwards}
+    .hero-bg-l{left:-2%;background-position:center 14%;mask-image:linear-gradient(to right,rgba(0,0,0,.92) 0%,rgba(0,0,0,.7) 35%,transparent 95%);-webkit-mask-image:linear-gradient(to right,rgba(0,0,0,.92) 0%,rgba(0,0,0,.7) 35%,transparent 95%)}
+    .hero-bg-r{right:-2%;background-position:center 8%;mask-image:linear-gradient(to left,rgba(0,0,0,.92) 0%,rgba(0,0,0,.7) 35%,transparent 95%);-webkit-mask-image:linear-gradient(to left,rgba(0,0,0,.92) 0%,rgba(0,0,0,.7) 35%,transparent 95%)}
+    @keyframes bgIn{to{opacity:1}}
+    .hero-bg-overlay{position:absolute;inset:0;z-index:1;background:
+      radial-gradient(ellipse 65% 70% at 50% 50%, rgba(14,31,31,.72), rgba(14,31,31,.42) 50%, transparent 90%),
+      linear-gradient(180deg, rgba(14,31,31,.55) 0%, rgba(14,31,31,.18) 40%, rgba(14,31,31,.78) 100%);
+      pointer-events:none;
+    }
+    .hero-bg-grain{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
+      background-image:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");background-size:240px 240px}
+
+    .hero .wrap{position:relative;z-index:3;width:100%}
+    .hero-inner{max-width:880px;margin:0 auto;text-align:center}
+    .hero .ey{margin-bottom:34px;justify-content:center;display:inline-flex}
+    .hero h1{font-size:clamp(52px,9vw,148px);font-weight:500;letter-spacing:-.025em;line-height:.98;text-shadow:0 1px 30px rgba(14,31,31,.35);text-wrap:balance}
+    .hero h1 .line{display:block;overflow:hidden}
+    .hero h1 .line span{display:block;transform:translateY(110%);animation:rise 1s cubic-bezier(.16,.84,.28,1) forwards}
+    .hero h1 .line:nth-child(2) span{animation-delay:.14s}
+    .hero h1 .line:nth-child(3) span{animation-delay:.28s}
+    @keyframes rise{to{transform:translateY(0)}}
+    .hero .claim{font-family:'Newsreader',serif;font-style:italic;font-weight:400;font-size:clamp(20px,2.15vw,32px);line-height:1.32;color:var(--off);margin:32px auto 0;max-width:720px;font-variation-settings:"opsz" 36;opacity:0;animation:fadeIn .9s ease-out .6s forwards;text-shadow:0 1px 16px rgba(14,31,31,.55)}
+    .hero .claim .o{color:var(--orange-soft)}
+    .hero .lede{color:var(--p-text);opacity:0;animation:fadeIn .9s ease-out .78s forwards;margin:28px auto 0;max-width:680px;text-shadow:0 1px 16px rgba(14,31,31,.6)}
+    .hero .actions{display:inline-flex;flex-wrap:wrap;gap:14px;margin-top:46px;opacity:0;animation:fadeIn .9s ease-out .94s forwards;justify-content:center}
+    .hero .tags{font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--p-cap);font-weight:600;margin-top:38px;opacity:0;animation:fadeIn .9s ease-out 1.08s forwards}
+    @keyframes fadeIn{to{opacity:1}}
+
+    .hero-sig{position:relative;z-index:3;margin-top:clamp(48px,7vw,86px);padding-top:24px;border-top:1px solid var(--p-line-2);display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--p-cap);font-weight:600;opacity:0;animation:fadeIn .9s ease-out 1.2s forwards}
+    .hero-sig .nm{color:var(--off)}
+    .hero-sig .nm .amp{color:var(--orange-soft);margin:0 .35em;font-family:'Newsreader',serif;font-style:italic;font-weight:500;letter-spacing:0;font-variation-settings:"opsz" 36;text-transform:none;font-size:1.4em;line-height:0;vertical-align:-2px}
+
+    /* scroll cue */
+    .scrollcue{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--p-cap);font-weight:600;opacity:0;animation:fadeIn 1s ease-out 1.4s forwards;z-index:3}
+    .scrollcue .ln{width:1px;height:38px;background:linear-gradient(to bottom,transparent,var(--orange-soft));position:relative;overflow:hidden}
+    .scrollcue .ln::after{content:'';position:absolute;top:-20px;left:0;width:100%;height:20px;background:var(--orange-soft);animation:cue 2.2s ease-in-out infinite}
+    @keyframes cue{0%{top:-20px;opacity:0}30%{opacity:1}100%{top:100%;opacity:0}}
+
+    /* ─── EDITORIAL STRIP ─────────────────────────────────────────────── */
+    .strip{background:var(--off-2);padding:clamp(54px,7vw,92px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .strip .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,4vw,60px);align-items:center}
+    .strip .num{width:clamp(56px,7vw,84px);height:clamp(56px,7vw,84px);display:flex;align-items:center;justify-content:center;color:var(--orange);border:1px solid rgba(217,96,30,.3);border-radius:50%;background:rgba(217,96,30,.06)}
+    .strip .num svg{width:55%;height:55%}
+    .strip blockquote{font-family:'Newsreader',serif;font-weight:400;font-style:normal;font-size:clamp(20px,2.4vw,34px);line-height:1.32;color:var(--petrol);letter-spacing:-.012em;font-variation-settings:"opsz" 72;text-wrap:balance}
+    .strip blockquote .o{font-style:italic;color:var(--orange-deep)}
+    .strip cite{display:block;margin-top:18px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--cap);font-style:normal;font-weight:600}
+
+    /* ─── SPLIT / GRIDS ───────────────────────────────────────────────── */
+    .split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:start;margin-top:clamp(36px,5vw,60px)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:start}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.4vw,32px)}
+    .grid-2 > *,.grid-3 > *{min-width:0}
+
+    /* ─── ACCORDION ───────────────────────────────────────────────────── */
+    .acc details{border-top:1px solid var(--line-2);padding:0}
+    .acc details:last-child{border-bottom:1px solid var(--line-2)}
+    .acc summary{list-style:none;cursor:pointer;padding:22px 0;display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:baseline;transition:color var(--t-fast)}
+    .acc summary::-webkit-details-marker{display:none}
+    .acc summary:hover{color:var(--petrol)}
+    .acc .tag{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);font-weight:600;min-width:64px}
+    .acc .h{font-family:'Newsreader',serif;font-weight:500;font-size:clamp(17px,1.4vw,21px);line-height:1.32;color:var(--petrol);font-variation-settings:"opsz" 36;letter-spacing:-.008em}
+    .acc .pl{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;color:var(--orange);transition:transform var(--t-med),color var(--t-fast)}
+    .acc .pl svg{width:18px;height:18px;display:block}
+    .acc details[open] .pl{transform:rotate(45deg)}
+    .acc .bd{padding:0 0 24px 84px;color:var(--txt);font-size:15.5px;line-height:1.72;max-width:780px}
+    .acc.no-tags summary{grid-template-columns:1fr auto}
+    .acc.no-tags .bd{padding-left:0}
+    .acc .scene{margin-top:18px;padding:16px 20px;background:var(--off-3);border-left:2px solid var(--orange-soft);font-family:'Newsreader',serif;font-style:italic;font-weight:400;font-size:15.5px;line-height:1.55;color:var(--petrol);font-variation-settings:"opsz" 36;border-radius:0 6px 6px 0}
+    .acc .scene .when{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-style:normal;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-bottom:8px}
+
+    /* sec-petrol accordion adjustments */
+    .sec-petrol .acc details{border-top-color:var(--p-line-2)}
+    .sec-petrol .acc details:last-child{border-bottom-color:var(--p-line-2)}
+    .sec-petrol .acc summary:hover{color:var(--off)}
+    .sec-petrol .acc .h{color:var(--off)}
+    .sec-petrol .acc .tag{color:var(--p-cap)}
+    .sec-petrol .acc .pl{color:var(--orange-soft)}
+    .sec-petrol .acc .bd{color:var(--p-sub)}
+    .sec-petrol .acc .scene{background:rgba(247,245,242,.04);border-left-color:var(--orange-soft);color:var(--off)}
+    .sec-petrol .acc .scene .when{color:var(--p-cap)}
+
+    /* ─── KOSTEN CALCULATOR ───────────────────────────────────────────── */
+    .cost{background:var(--off-2);border:1px solid var(--line);border-radius:var(--rad-l);padding:clamp(28px,4vw,52px);box-shadow:var(--shadow-soft);position:relative;overflow:hidden}
+    .cost::before{content:'';position:absolute;top:0;right:0;width:140px;height:140px;background:radial-gradient(circle at top right,var(--orange-glow),transparent 70%);pointer-events:none}
+    .cost .lab{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-bottom:12px}
+    .cost .big{font-family:'Newsreader',serif;font-weight:500;font-size:clamp(40px,5vw,68px);color:var(--petrol);line-height:1;letter-spacing:-.018em;font-variation-settings:"opsz" 72}
+    .cost .big span{color:var(--orange-deep)}
+    .cost input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;background:var(--line-2);border-radius:3px;margin-top:22px;outline:none;cursor:pointer}
+    .cost input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:22px;height:22px;background:var(--orange);border-radius:50%;cursor:pointer;border:3px solid var(--off);box-shadow:0 4px 12px rgba(217,96,30,.4);transition:transform var(--t-fast)}
+    .cost input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.15)}
+    .cost input[type=range]::-moz-range-thumb{width:22px;height:22px;background:var(--orange);border-radius:50%;cursor:pointer;border:3px solid var(--off);box-shadow:0 4px 12px rgba(217,96,30,.4)}
+    .cost .ends{display:flex;justify-content:space-between;margin-top:10px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;color:var(--mute);font-weight:500}
+    .cost .res{padding-left:clamp(0px,3vw,40px);border-left:1px solid var(--line);padding-top:6px}
+    .cost .total{margin-top:32px;padding-top:24px;border-top:1px dashed var(--line-2);font-family:'Newsreader',serif;font-style:italic;font-size:clamp(17px,1.5vw,22px);color:var(--petrol);font-variation-settings:"opsz" 36;font-weight:400}
+    .cost .total b{font-style:normal;font-weight:600;color:var(--orange-deep)}
+    .cost .disc{margin-top:18px;font-size:13px;line-height:1.62;color:var(--mute);max-width:720px}
+
+    /* ─── METHODE ─────────────────────────────────────────────────────── */
+    .phases{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:clamp(34px,4vw,52px) 0 clamp(40px,5vw,64px);padding:24px;background:var(--off-2);border-radius:var(--rad-l);border:1px solid var(--line)}
+    .ph{display:flex;align-items:center;gap:12px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--cap);font-weight:600}
+    .ph .dot{width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0}
+    .ph .num{font-family:'Newsreader',serif;font-style:italic;font-weight:500;color:var(--orange);font-size:18px;letter-spacing:0;font-variation-settings:"opsz" 36}
+    .ph .lab{color:var(--petrol)}
+
+    .steps{display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)}
+    .step{display:grid;grid-template-columns:auto 1fr;gap:clamp(22px,3vw,40px);padding:clamp(26px,3vw,40px);background:var(--off-2);border:1px solid var(--line);border-radius:var(--rad-l);position:relative;transition:transform var(--t-med),box-shadow var(--t-med),border-color var(--t-med)}
+    .step:hover{transform:translateY(-2px);border-color:var(--line-2);box-shadow:var(--shadow-soft)}
+    .step .n{font-family:'Newsreader',serif;font-style:italic;font-weight:300;font-size:clamp(56px,7vw,96px);color:var(--orange);line-height:1;letter-spacing:-.02em;font-variation-settings:"opsz" 144;min-width:60px}
+    .step h3{font-size:clamp(22px,2.2vw,30px);margin-bottom:14px;color:var(--petrol)}
+    .step p{font-size:16px;line-height:1.7;color:var(--txt);max-width:680px}
+    .step .oton{font-family:'Newsreader',serif;font-style:italic;font-weight:400;color:var(--petrol);font-variation-settings:"opsz" 36}
+    .step .audiosoon{display:inline-block;margin-top:14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);font-weight:600}
+    .step .scene{margin-top:18px;padding:16px 20px;background:var(--off-3);border-left:2px solid var(--orange-soft);font-family:'Newsreader',serif;font-style:italic;font-weight:400;font-size:15.5px;line-height:1.55;color:var(--petrol);font-variation-settings:"opsz" 36;border-radius:0 6px 6px 0;max-width:680px}
+    .step .scene .when{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-style:normal;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-bottom:8px}
+
+    .facts{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);margin-top:clamp(36px,4vw,52px);padding:clamp(24px,3vw,36px);background:var(--off-3);border-radius:var(--rad-l);border:1px solid var(--line)}
+    .facts h5{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--cap);font-weight:700;margin-bottom:18px}
+    .facts ul{list-style:none}
+    .facts li{padding:11px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;font-size:14.5px;color:var(--txt);font-weight:500}
+    .facts li:first-child{border-top:0}
+    .facts li b{font-weight:700;color:var(--petrol);font-family:'Newsreader',serif;font-style:italic;font-variation-settings:"opsz" 36}
+
+    /* ─── DELIVERABLES (NEW) ──────────────────────────────────────────── */
+    .deliv{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,1.8vw,24px);margin-top:clamp(36px,5vw,56px)}
+    .deliv > *{min-width:0}
+    .delv{padding:clamp(26px,3vw,36px);background:var(--off-2);border:1px solid var(--line);border-radius:var(--rad-l);position:relative;transition:transform var(--t-med),box-shadow var(--t-med),border-color var(--t-med);overflow:hidden;display:flex;flex-direction:column;height:100%}
+    .delv:hover{transform:translateY(-3px);border-color:var(--line-2);box-shadow:var(--shadow-soft)}
+    .delv > p{flex-grow:0}
+    .delv h4 + p{flex-grow:1}
+    .delv .meta{margin-top:auto;padding-top:18px}
+    .delv::after{content:'';position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right,var(--orange-glow),transparent 75%);pointer-events:none;opacity:0;transition:opacity var(--t-med)}
+    .delv:hover::after{opacity:1}
+    .delv .ix{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:10px;background:rgba(217,96,30,.10);color:var(--orange);margin-bottom:20px;border:1px solid rgba(217,96,30,.22);transition:background var(--t-fast),transform var(--t-fast)}
+    .delv:hover .ix{background:rgba(217,96,30,.16);transform:scale(1.04)}
+    .delv .ix svg{width:22px;height:22px}
+    .delv h4{font-family:'Newsreader',serif;font-weight:600;font-size:21px;line-height:1.25;color:var(--petrol);margin-bottom:12px;letter-spacing:-.008em;font-variation-settings:"opsz" 36}
+    .delv p{font-size:15px;line-height:1.65;color:var(--txt)}
+    .delv .meta{margin-top:auto;padding-top:18px;border-top:1px dashed var(--line);font-family:'Plus Jakarta Sans',sans-serif;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--cap);font-weight:600}
+    .delv .meta b{color:var(--orange-deep);font-weight:700}
+
+    /* ─── VERSUS (NEW) ────────────────────────────────────────────────── */
+    .vs{margin-top:clamp(36px,5vw,56px);background:var(--deep);border-radius:var(--rad-l);overflow:hidden;border:1px solid var(--p-line-2)}
+    .vs-head{display:grid;grid-template-columns:1.4fr 1fr 1fr;border-bottom:1px solid var(--p-line-2)}
+    .vs-head > *{padding:24px 28px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+    .vs-head .col-h{color:var(--p-cap)}
+    .vs-head .col-bad{color:var(--p-sub);border-left:1px solid var(--p-line-2)}
+    .vs-head .col-good{color:var(--orange-soft);border-left:1px solid var(--p-line-2);background:rgba(217,96,30,.06)}
+    .vs-row{display:grid;grid-template-columns:1.4fr 1fr 1fr;border-bottom:1px solid var(--p-line);transition:background var(--t-med)}
+    .vs-row:hover{background:rgba(247,245,242,.02)}
+    .vs-row:last-child{border-bottom:0}
+    .vs-row > *{padding:24px 28px;font-size:15px;line-height:1.55}
+    .vs-row .topic{color:var(--p-sub);font-family:'Newsreader',serif;font-style:italic;font-weight:400;font-variation-settings:"opsz" 36;font-size:16px}
+    .vs-row .bad{color:var(--p-sub);border-left:1px solid var(--p-line)}
+    .vs-row .good{color:var(--off);border-left:1px solid var(--p-line);background:rgba(217,96,30,.05);font-weight:500}
+    .vs-row .good::before,.vs-row .bad::before{
+      content:'';display:inline-block;width:15px;height:15px;margin-right:12px;vertical-align:-2px;flex-shrink:0;
+      background-repeat:no-repeat;background-position:center;background-size:contain;
+    }
+    .vs-row .good::before{
+      background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23EFA76A' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+    }
+    .vs-row .bad::before{
+      background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F7F5F274' stroke-width='2' stroke-linecap='round'%3E%3Cline x1='6' y1='12' x2='18' y2='12'/%3E%3C/svg%3E");
+    }
+
+    /* ─── COLS2 (Für wen) ─────────────────────────────────────────────── */
+    .cols2{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(20px,3vw,32px);margin-top:clamp(36px,5vw,56px)}
+    .cols2 > *{min-width:0}
+    .c{padding:clamp(28px,3.5vw,42px);border:1px solid var(--line);border-radius:var(--rad-l);background:var(--off-2);transition:transform var(--t-med),border-color var(--t-med),box-shadow var(--t-med);position:relative;overflow:hidden}
+    .c:hover{transform:translateY(-3px);box-shadow:var(--shadow-soft)}
+    .c.yes{border-color:rgba(217,96,30,.5);background:linear-gradient(165deg,#FDF7EE 0%,var(--off-2) 75%);box-shadow:0 1px 2px rgba(217,96,30,.06),0 12px 32px -16px rgba(217,96,30,.18)}
+    .c.yes::before{content:'';position:absolute;top:0;right:0;width:200px;height:200px;background:radial-gradient(circle at top right,rgba(217,96,30,.16),transparent 70%);pointer-events:none}
+    .c.no{background:var(--off-2)}
+    .c-head{display:flex;align-items:center;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+    .c .badge{font-family:'Plus Jakarta Sans',sans-serif;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;padding:6px 11px;border-radius:5px;line-height:1}
+    .c.yes .badge{background:var(--orange);color:var(--off)}
+    .c.no .badge{background:transparent;color:var(--mute);border:1px solid var(--line-2)}
+    .c h4{font-family:'Newsreader',serif;font-weight:600;font-size:clamp(20px,1.7vw,24px);color:var(--petrol);line-height:1.25;letter-spacing:-.008em;font-variation-settings:"opsz" 36;margin:0}
+    .c.yes h4{color:var(--orange-deep)}
+    .c ul{list-style:none}
+    .c li{padding:16px 0;border-top:1px solid var(--line);display:flex;gap:14px;align-items:flex-start;font-size:15.5px;line-height:1.55;color:var(--txt)}
+    .c li:first-child{border-top:0}
+    .c .m{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;flex-shrink:0;margin-top:1px}
+    .c .m svg{width:16px;height:16px;display:block}
+    .c.yes .m{color:var(--orange)}
+    .c.no .m{color:var(--mute)}
+
+    /* ─── SELBSTTEST ──────────────────────────────────────────────────── */
+    .selftest{background:var(--off-2);border:1px solid var(--line);border-radius:var(--rad-l);overflow:hidden;margin-top:clamp(36px,5vw,52px);box-shadow:var(--shadow-soft)}
+    .stHead{display:flex;align-items:center;justify-content:space-between;padding:22px clamp(24px,3vw,40px);background:var(--off-3);border-bottom:1px solid var(--line);font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--cap);font-weight:700}
+    .stHead .step{color:var(--orange-deep)}
+    .segments{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;padding:14px clamp(24px,3vw,40px);background:var(--off-3);border-bottom:1px solid var(--line)}
+    .seg{height:3px;background:var(--line-2);border-radius:2px;transition:background var(--t-med)}
+    .seg.on{background:var(--orange)}
+    .bodyGrid{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,4vw,52px);padding:clamp(32px,4vw,52px)}
+    .qnum{font-family:'Newsreader',serif;font-style:italic;font-weight:300;color:var(--orange);font-size:clamp(60px,7vw,96px);line-height:1;letter-spacing:-.02em;font-variation-settings:"opsz" 144;min-width:90px}
+    .qnum .of{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-style:normal;font-size:11px;letter-spacing:.2em;color:var(--cap);text-transform:uppercase;margin-top:8px;font-weight:600}
+    .q-text,.rtitle{font-family:'Newsreader',serif;font-weight:500;font-size:clamp(22px,2.4vw,32px);line-height:1.22;color:var(--petrol);margin-bottom:24px;letter-spacing:-.012em;font-variation-settings:"opsz" 36}
+    .rtitle .o{font-style:italic;font-weight:400}
+    .opts{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+    .opt{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;padding:18px 22px;background:var(--off);border:1px solid var(--line);border-radius:var(--rad);cursor:pointer;text-align:left;font-family:'Plus Jakarta Sans',sans-serif;font-size:15.5px;line-height:1.4;color:var(--txt);transition:border-color var(--t-fast),background var(--t-fast),transform var(--t-fast);font-weight:500}
+    .opt:hover{border-color:var(--line-3);background:#FEFCF8;transform:translateX(3px)}
+    .opt.sel{border-color:var(--orange);background:#FDF4EC;color:var(--petrol)}
+    .opt .ix{font-family:'Newsreader',serif;font-style:italic;font-weight:400;color:var(--orange);font-size:16px;text-transform:lowercase;letter-spacing:.04em;font-variation-settings:"opsz" 36;min-width:18px}
+    .nav-q{display:flex;justify-content:space-between;margin-top:28px;gap:14px}
+    .nav-q button{border:none;background:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;padding:14px 24px;border-radius:8px;transition:all var(--t-fast)}
+    .nav-q .back{color:var(--cap)}
+    .nav-q .back:not(:disabled):hover{color:var(--petrol)}
+    .nav-q .back:disabled{opacity:.3;cursor:not-allowed}
+    .nav-q .next{background:var(--orange);color:var(--off);border:1px solid var(--orange)}
+    .nav-q .next:not(:disabled):hover{background:#C8581C;transform:translateY(-1px);box-shadow:0 8px 20px -8px rgba(217,96,30,.5)}
+    .nav-q .next:disabled{opacity:.4;cursor:not-allowed}
+    .rletter{font-family:'Newsreader',serif;font-weight:300;color:var(--orange);font-size:clamp(80px,10vw,140px);line-height:1;letter-spacing:-.04em;font-variation-settings:"opsz" 144;min-width:120px}
+    .rletter .lbl{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.2em;color:var(--cap);text-transform:uppercase;margin-top:6px;font-weight:600}
+    .rbody{font-size:16px;line-height:1.7;color:var(--txt);max-width:680px}
+    .rbody p{margin-bottom:14px}
+    .rbody ul{list-style:none;padding:0}
+    .ractions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px;align-items:center}
+    .restart{background:none;border:1px solid var(--line-2);cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;padding:14px 22px;border-radius:8px;color:var(--cap);transition:all var(--t-fast)}
+    .restart:hover{border-color:var(--petrol);color:var(--petrol)}
+
+    /* ─── TEAM ────────────────────────────────────────────────────────── */
+    .people{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,44px);margin-top:clamp(36px,5vw,56px)}
+    .people > *{min-width:0}
+    .person{padding:0;background:var(--off-2);border:1px solid var(--line);border-radius:var(--rad-l);position:relative;transition:transform var(--t-med),box-shadow var(--t-med),border-color var(--t-med);overflow:hidden}
+    .person:hover{transform:translateY(-3px);box-shadow:var(--shadow-soft);border-color:var(--line-2)}
+    .pph{aspect-ratio:4/5;overflow:hidden;background:var(--off-3);position:relative;border-bottom:1px solid var(--line)}
+    .pph img{width:100%;height:100%;object-fit:cover;object-position:50% 28%;display:block;transition:transform 1.6s cubic-bezier(.16,.84,.28,1)}
+    .person:nth-of-type(2) .pph img{object-position:50% 18%}
+    .person:hover .pph img{transform:scale(1.04)}
+    .pph::after{content:'';position:absolute;left:0;right:0;bottom:0;height:38%;background:linear-gradient(to top,rgba(247,245,242,.22),transparent);pointer-events:none}
+    .pph .tag{position:absolute;top:14px;left:14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--off);background:rgba(14,31,31,.55);backdrop-filter:blur(8px);padding:7px 10px;border-radius:4px;border:1px solid rgba(247,245,242,.18);z-index:2}
+    .pbody{padding:clamp(28px,3.5vw,38px)}
+    .pbody .nm{font-family:'Newsreader',serif;font-weight:600;font-size:clamp(22px,2vw,26px);color:var(--petrol);line-height:1.2;letter-spacing:-.008em;font-variation-settings:"opsz" 36}
+    .pbody .ro{font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-top:6px}
+    .pbody p{margin-top:18px;font-size:15.5px;line-height:1.68;color:var(--txt)}
+    .pbody .pq{margin-top:22px;padding-top:20px;border-top:1px dashed var(--line-2);font-family:'Newsreader',serif;font-style:italic;font-weight:400;font-size:16.5px;line-height:1.5;color:var(--petrol);font-variation-settings:"opsz" 36;letter-spacing:-.005em}
+    .pbody .pq::before{content:'„';color:var(--orange);font-size:26px;margin-right:4px;line-height:0;font-style:normal;font-weight:600}
+    .pbody .pq::after{content:'"';color:var(--orange);font-size:26px;margin-left:2px;line-height:0;font-style:normal;font-weight:600}
+
+    .pilot{margin-top:clamp(28px,3vw,40px);padding:clamp(24px,3vw,32px);background:var(--off-3);border-left:3px solid var(--orange);border-radius:0 var(--rad) var(--rad) 0;font-size:15.5px;line-height:1.65;color:var(--txt);max-width:880px}
+    .pilot b{color:var(--petrol);font-weight:700}
+
+    .industries{margin-top:clamp(40px,5vw,64px)}
+    .industries h5{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--cap);font-weight:700;margin-bottom:22px}
+    .industries .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .industries .grid > *{min-width:0}
+    .tg{padding:18px 22px;background:var(--off-2);border:1px solid var(--line);border-radius:var(--rad);transition:border-color var(--t-fast),transform var(--t-fast)}
+    .tg:hover{border-color:var(--line-2);transform:translateY(-1px)}
+    .tg .t{display:block;font-family:'Newsreader',serif;font-weight:600;font-size:16px;color:var(--petrol);line-height:1.25;font-variation-settings:"opsz" 36;letter-spacing:-.005em}
+    .tg .sub{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;color:var(--mute);margin-top:6px;line-height:1.4}
+    .industries .note{margin-top:20px;font-size:13.5px;color:var(--mute);font-style:italic;max-width:780px;line-height:1.6}
+
+    /* ─── CTA / FORM ──────────────────────────────────────────────────── */
+    .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);margin-top:clamp(36px,5vw,52px);align-items:start}
+    .cta-grid > *{min-width:0}
+    .cmail{display:flex;flex-direction:column;gap:6px;padding:22px 26px;background:rgba(247,245,242,.05);border:1px solid var(--p-line-2);border-radius:var(--rad);margin-top:24px;transition:background var(--t-med),border-color var(--t-med),transform var(--t-fast)}
+    .cmail:hover{background:rgba(247,245,242,.08);border-color:var(--orange-soft);transform:translateY(-2px)}
+    .cmail .k{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--p-cap);font-weight:600}
+    .cmail .v{font-family:'Newsreader',serif;font-size:19px;font-weight:500;color:var(--off);font-variation-settings:"opsz" 36;letter-spacing:-.005em}
+
+    .formcard{padding:clamp(28px,3.5vw,40px);background:var(--off);border:1px solid var(--p-line-2);border-radius:var(--rad-l);box-shadow:var(--shadow-deep);color:var(--txt)}
+    .formcard .formhint{font-family:'Plus Jakarta Sans',sans-serif;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-bottom:24px;display:flex;flex-wrap:wrap;gap:0 14px;align-items:center;line-height:1.6}
+    .formcard .formhint span{color:var(--orange);font-weight:700}
+    .f{margin-bottom:18px}
+    .f label{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-bottom:8px}
+    .req{color:var(--orange);font-weight:700;margin-left:2px}
+    .f input:invalid:not(:placeholder-shown),.f textarea:invalid:not(:placeholder-shown){border-color:rgba(217,96,30,.4)}
+    .f input,.f textarea{width:100%;padding:14px 16px;background:var(--off-2);border:1px solid var(--line-2);border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;color:var(--txt);transition:border-color var(--t-fast),background var(--t-fast)}
+    .f input:focus,.f textarea:focus{outline:none;border-color:var(--orange);background:var(--off)}
+    .f textarea{resize:vertical;min-height:60px}
+    .formcard button[type=submit]{width:100%;padding:18px;background:var(--orange);color:var(--off);border:none;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;cursor:pointer;transition:transform var(--t-fast),background var(--t-fast),box-shadow var(--t-fast);position:relative;overflow:hidden}
+    .formcard button[type=submit]::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.2) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s cubic-bezier(.2,.7,.3,1)}
+    .formcard button[type=submit]:hover::before{transform:translateX(120%)}
+    .formcard button[type=submit]:hover{background:#C8581C;transform:translateY(-2px);box-shadow:0 14px 32px -12px rgba(217,96,30,.5)}
+    .formcard .note{margin-top:14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--cap);text-align:center;font-weight:500}
+
+    /* ─── FOOTER ──────────────────────────────────────────────────────── */
+    footer{background:var(--deep);color:var(--p-sub);padding:clamp(56px,7vw,88px) 0 clamp(28px,3vw,40px);position:relative;z-index:2}
+    .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:clamp(28px,4vw,56px);margin-bottom:clamp(40px,5vw,64px)}
+    .fgrid > *{min-width:0}
+    .fgrid p{font-size:14px;line-height:1.65;color:var(--p-sub)}
+    .fgrid .brand .nm{font-size:24px}
+    .fgrid .ft{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--p-cap);font-weight:700;margin-bottom:16px}
+    .fgrid a:not(.brand){display:block;color:var(--p-text);margin-bottom:8px;transition:color var(--t-fast);font-size:14px}
+    .fgrid a:not(.brand):hover{color:var(--orange-soft)}
+    .fgrid .soon{color:var(--p-cap);cursor:not-allowed}
+    .fbot{border-top:1px solid var(--p-line);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;color:var(--p-cap);font-weight:500}
+    .fbot .claim{font-family:'Newsreader',serif;font-style:italic;font-weight:400;font-size:15px;color:var(--orange-soft);font-variation-settings:"opsz" 36;letter-spacing:-.005em}
+
+    /* ─── STICKY CTA (mobile) ─────────────────────────────────────────── */
+    #scta{position:fixed;left:0;right:0;bottom:0;padding:14px var(--pad);background:var(--orange);color:var(--off);text-align:center;font-family:'Plus Jakarta Sans',sans-serif;font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;z-index:50;transform:translateY(120%);transition:transform var(--t-med);box-shadow:0 -8px 30px -8px rgba(14,31,31,.3);display:none}
+    #scta.show{transform:translateY(0)}
+    #scta a{display:block}
+
+    /* ─── RESPONSIVE ──────────────────────────────────────────────────── */
+    @media (max-width:1100px){
+      .hero-bg-img{width:62%}
+      .grid-3,.deliv,.industries .grid{grid-template-columns:repeat(2,1fr)}
+      .phases{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:860px){
+      .nlinks{display:none}.ncta{display:none}.burger{display:flex}
+      .hero{min-height:auto;padding:clamp(80px,14vh,120px) 0 clamp(72px,11vw,100px)}
+      .hero-bg-img{width:80%;filter:grayscale(.08) contrast(1.06) brightness(.7)}
+      .hero-bg-overlay{background:linear-gradient(180deg,rgba(14,31,31,.6),rgba(14,31,31,.75) 50%,rgba(14,31,31,.92))}
+      .split,.grid-2,.cols2,.cta-grid{grid-template-columns:1fr;gap:32px}
+      .cost .res{padding-left:0;border-left:0;padding-top:24px;border-top:1px solid var(--line);margin-top:12px}
+      .step{grid-template-columns:1fr}
+      .step .n{font-size:48px;margin-bottom:-12px}
+      .people{grid-template-columns:1fr}
+      .deliv,.grid-3{grid-template-columns:1fr}
+      .industries .grid{grid-template-columns:1fr}
+      .vs-head,.vs-row{grid-template-columns:1fr}
+      .vs-row > *,.vs-head > *{border-left:0!important;border-top:1px solid var(--p-line);padding:16px 20px}
+      .vs-row > *:first-child,.vs-head > *:first-child{border-top:0}
+      .vs-row .topic{font-size:14px;color:var(--p-cap);text-transform:uppercase;letter-spacing:.16em;font-family:'Plus Jakarta Sans',sans-serif;font-style:normal;font-weight:700}
+      .bodyGrid{grid-template-columns:1fr;gap:24px;padding:28px}
+      .qnum,.rletter{font-size:54px;min-width:0}
+      .facts{grid-template-columns:1fr;gap:24px}
+      .fgrid{grid-template-columns:1fr;gap:32px}
+      .acc .bd{padding-left:0}
+      #scta{display:block}
+      section{padding:clamp(64px,10vw,96px) 0}
+      .strip .wrap{grid-template-columns:1fr}
+      .scrollcue{display:none}
+    }
+    @media (max-width:520px){
+      .hero h1{font-size:clamp(40px,11vw,58px)}
+      .d2{font-size:clamp(28px,7vw,40px)}
+      .ph .lab{display:none}
+      .phases{grid-template-columns:repeat(4,1fr);padding:18px;gap:10px}
+      .ph{justify-content:center}.ph .num{font-size:14px}
+      .acc summary{grid-template-columns:1fr auto;gap:10px}
+      .acc .tag{grid-column:1;font-size:10px;margin-bottom:-4px}
+      .acc .h{grid-column:1}.acc .pl{grid-column:2;grid-row:1/3}
+    }
+    @media (prefers-reduced-motion: reduce){
+      *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+      .rv{opacity:1;transform:none}
+    }
+
+    /* utility */
+    .center{text-align:center}
+    [hidden]{display:none!important}
+  </style>
+</head>
+<body>
+  <div class="prog" id="prog" aria-hidden="true"></div>
+
+  <header id="hdr">
+    <div class="wrap">
+      <nav class="nav">
+        <a href="#top" class="brand" aria-label="Morgan und Bergen">
+          <span class="nm">Morgan<span class="amp">&amp;</span>Bergen</span>
+          <span class="sub">Vertriebsarbeit · Nürnberg · DACH</span>
+        </a>
+        <div class="nlinks">
+          <a href="#problem">Diagnose</a>
+          <a href="#methode">Methode</a>
+          <a href="#bekommen">Was Sie bekommen</a>
+          <a href="#team">Team</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <a class="ncta" href="#anfrage">Fundament-Check →</a>
+        <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+        </button>
+      </nav>
+    </div>
+    <div id="mnav">
+      <a href="#problem">Diagnose</a>
+      <a href="#methode">Methode</a>
+      <a href="#bekommen">Was Sie bekommen</a>
+      <a href="#anders">Anders als die meisten</a>
+      <a href="#team">Team</a>
+      <a href="#faq">FAQ</a>
+      <a href="#anfrage" style="color:var(--orange-soft)">Fundament-Check anfragen →</a>
+    </div>
+  </header>
+  <span id="top"></span>
+
+  <!-- ═══ HERO ════════════════════════════════════════════════════════════ -->
+  <section class="hero sec-petrol">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-bg-img hero-bg-l" style="background-image:url('assets/svenja-bw.jpg')"></div>
+      <div class="hero-bg-img hero-bg-r" style="background-image:url('assets/jamie-bw.jpg')"></div>
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-bg-grain"></div>
+    </div>
+    <div class="wrap">
+      <div class="hero-inner">
+        <p class="ey"><span class="dot"></span>Substanz <b>·</b> Fundament <b>·</b> Akquise</p>
+        <h1>
+          <span class="line"><span>Wenn wir Akquise machen,</span></span>
+          <span class="line"><span>prägen wir Ihren <span class="o">Ruf.</span></span></span>
+        </h1>
+        <p class="claim">Wir telefonieren erst, wenn wir hinter Ihrem <span class="o">Angebot stehen.</span></p>
+        <p class="lede">Wir übernehmen die Erstansprache für Sie — mit der gleichen Sorgfalt, die Sie an Ihre eigenen Mitarbeiter und an sich selbst anlegen. Bevor wir wählen, prüfen wir Ihr Fundament: <span class="o">Angebot, Positionierung, Wording.</span> Trägt es, gehen wir los. Trägt es nicht, gehen wir es gemeinsam an.</p>
+        <div class="actions">
+          <a href="#anfrage" class="btn fill">Fundament-Check anfragen <span class="arr">→</span></a>
+          <a href="#methode" class="btn ghost">Wie wir arbeiten</a>
+        </div>
+        <p class="tags">Für Berater · kleine B2B-Dienstleister · Coaches · Spezialagenturen</p>
+      </div>
+      <div class="hero-sig">
+        <span class="nm">Svenja Bergen <span class="amp">&amp;</span> Jamie Morgan</span>
+        <span>Nürnberg · DACH</span>
+      </div>
+    </div>
+    <div class="scrollcue" aria-hidden="true">
+      <span>Scrollen</span>
+      <span class="ln"></span>
+    </div>
+  </section>
+
+  <!-- ═══ EDITORIAL STRIP ════════════════════════════════════════════════ -->
+  <section class="strip" aria-label="Leitsatz">
+    <div class="wrap">
+      <div class="num" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+      </div>
+      <div>
+        <blockquote>Was wir am Hörer nicht vertreten würden, beauftragen wir auch nicht. <span class="o">Das ist unser Maß</span> — und Ihr Schutz.</blockquote>
+        <cite>— Leitsatz Morgan &amp; Bergen</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 01 · DIAGNOSE ══════════════════════════════════════════════════ -->
+  <section id="problem">
+    <div class="wrap">
+      <p class="secno rv"><span class="dot"></span><b>01</b> Diagnose</p>
+      <div class="split">
+        <div class="rv">
+          <h2 class="d2">Sie können es. Es fehlt nur der <span class="o">Weg</span> zum Kunden.</h2>
+          <p class="lede">Ihr Handwerk steht. Ihr Angebot ist gut, manchmal brillant. Was fehlt, ist nicht Können. Es fehlt ein Weg zum Kunden, der weder Ihre Zeit frisst noch Ihren Namen ruiniert.</p>
+          <p class="quote" style="margin-top:34px">Ich liefere gut, weil ich mich auf die Arbeit konzentriere. Sobald ich Akquise selbst mache, leidet eins von beiden. Und ich weiß nicht mehr, welches.</p>
+          <p class="mono" style="margin-top:32px">Tippen Sie an, was Sie trifft</p>
+        </div>
+        <div class="acc rv d1">
+          <details open>
+            <summary><span class="tag">Muster 01</span><span class="h">Profi im Fach. Kein Sales-Profi. Und keine Zeit, einer zu werden.</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+            <div class="bd">
+              Vertrieb ist ein eigenes Handwerk. Nebenbei lernen, während Sie liefern, klappt nicht. Entweder Sie haben den Kopf nicht frei. Oder Sie können es einfach nicht, weil es nie Ihr Fach war. Meistens beides. Und das ist okay. Ein Architekt soll auch nicht der eigene Elektriker sein.
+              <div class="scene"><span class="when">Donnerstag, 14 Uhr</span>Drei Leute haben Ihnen heute gesagt, Sie „sollten mehr posten". Sie wissen es. Sie machen es nicht. Weil es nicht Ihr Fach ist. Und Sie werden nicht in einer Stunde zum Vertriebler.</div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="tag">Muster 02</span><span class="h">Empfehlungen reichen nicht mehr.</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+            <div class="bd">
+              Drei Jahre lief alles über Mundpropaganda. Sie waren beschäftigt, hatten gute Kunden, alles war gut. Dann wurde es leiser. Nicht abrupt, nur langsam. Und jetzt merken Sie: der Strom kommt nicht von alleine zurück.
+              <div class="scene"><span class="when">Donnerstag, 16 Uhr</span>Ein Bestandskunde verschiebt zum dritten Mal. Sie schauen in den Kalender für Mai. Zwei Termine. Sie fragen sich, wann das letzte Mal jemand von alleine angefragt hat.</div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="tag">Muster 03</span><span class="h">Ich kann nicht alles gleichzeitig sein.</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+            <div class="bd">
+              Sie liefern. Sie halten Beziehungen. Sie schreiben Angebote und Rechnungen, sind sichtbar auf LinkedIn. Und sollen jetzt auch noch kalt anrufen. Etwas leidet immer. Meistens das, was Sie am besten können.
+              <div class="scene"><span class="when">Sonntagabend</span>Sie schreiben drei Namen auf einen Zettel für Montag. Montag wird der Tag voll. Mittwoch sind die Namen weg, ohne dass Sie sie angerufen haben.</div>
+            </div>
+          </details>
+          <details>
+            <summary><span class="tag">Muster 04</span><span class="h">Einmal gebrannt: billig hat doppelt gekostet.</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+            <div class="bd">
+              Vielleicht haben Sie es schon getestet. 1.500 € im Monat, „erste Termine in zwei Wochen". Die Termine kamen, irgendwie. Manche waren nicht qualifiziert. Einer war gar nicht echt eingebucht. Sie haben nach drei Monaten gekündigt. Das ungute Bauchgefühl ist geblieben.
+              <div class="scene"><span class="when">Dienstag, 11 Uhr</span>Sie sitzen in einem Erstgespräch und merken: das Gegenüber ist nicht informiert, war eher überredet als überzeugt. Sie verlassen den Call und denken: Das war jetzt mein Name, der da gewirkt hat.</div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 02 · KOSTEN ════════════════════════════════════════════════════ -->
+  <section id="kosten">
+    <div class="wrap">
+      <p class="secno rv"><span class="dot"></span><b>02</b> Was es kostet</p>
+      <h2 class="d2 rv">Ein schlechter Anruf kostet Sie nicht nur den Termin.<br><span class="o">Sondern auch den nächsten.</span></h2>
+      <p class="lede rv">Ein verbrannter Eindruck spricht sich schnell herum. Bewegen Sie den Regler. Sehen Sie, was Folgegeschäft kostet, wenn der erste Kontakt schiefgeht.</p>
+      <div class="cost rv d1" style="margin-top:clamp(36px,5vw,56px)">
+        <div class="grid-2" style="align-items:end">
+          <div>
+            <div class="lab">Ihr typischer Auftragswert</div>
+            <div class="big"><span id="av">6.500</span> €</div>
+            <input id="slider" type="range" min="2500" max="80000" step="100" value="6500" aria-label="Typischer Auftragswert">
+            <div class="ends"><span>2.500 €</span><span>80.000 €</span></div>
+          </div>
+          <div class="res">
+            <div class="lab" style="margin-bottom:8px">Verlorenes Folgegeschäft pro Jahr</div>
+            <div class="big">ca. <span id="loss">19.500</span> €</div>
+            <p class="body" style="font-size:13.5px;margin-top:8px;color:var(--mute)">bei nur 3 Kunden, die wegen eines verbrannten Rufs nicht wiederkommen</p>
+          </div>
+        </div>
+        <p class="total">Über drei Jahre: <b>ca. <span id="loss3">58.500</span> €</b>. Folgegeschäft, das ein einziger schlechter Eindruck kostet.</p>
+        <p class="disc">Annahme: ein guter Erstkunde bringt im Schnitt drei Folgeaufträge. Rechenmodell, kein Garantiewert. Verlust ist nicht nur Euro: Sichtbarkeit, Verhandlungsposition und Folgeanfragen kosten still mit. Genau das prüfen wir im Fundament-Check, bevor in Ihrem Namen telefoniert wird.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 03 · DER UNTERSCHIED ═══════════════════════════════════════════ -->
+  <section class="sec-petrol">
+    <div class="wrap">
+      <p class="secno rv"><span class="dot"></span><b>03</b> Der Unterschied</p>
+      <h2 class="d2 rv" style="max-width:1080px">Im Markt bleibt nicht die Zahl der Anrufe.<br>Es bleibt, <span class="o">wie sich der Kontakt angefühlt hat.</span></h2>
+      <p class="lede rv" style="margin-top:34px">Wir machen Sie sichtbar — so, dass der Eindruck im Markt Ihrer Qualität entspricht. Nicht ein Kalender voller Termine, sondern Gespräche, an die Ihr Gegenüber sich gern erinnert. Auch wenn daraus heute kein direkter Auftrag wird.</p>
+      <div class="rv d1" style="margin-top:42px"><a href="#anfrage" class="btn fill">Fundament-Check anfragen <span class="arr">→</span></a></div>
+    </div>
+  </section>
+
+  <!-- ═══ 04 · METHODE ═══════════════════════════════════════════════════ -->
+  <section id="methode">
+    <div class="wrap">
+      <p class="secno rv"><span class="dot"></span><b>04</b> Die Methode</p>
+      <h2 class="d2 rv">Ein System. <span class="o">Nicht lose Anrufe.</span></h2>
+      <p class="lede rv">Vier Schritte, die aufeinander aufbauen. Der erste ist der wichtigste — und der, der oft alles entscheidet.</p>
+
+      <div class="phases rv">
+        <div class="ph"><span class="dot"></span><span class="num">01</span><span class="lab">Fundament-Check</span></div>
+        <div class="ph"><span class="dot"></span><span class="num">02</span><span class="lab">Schärfen</span></div>
+        <div class="ph"><span class="dot"></span><span class="num">03</span><span class="lab">Akquise</span></div>
+        <div class="ph"><span class="dot"></span><span class="num">04</span><span class="lab">Lieferung</span></div>
+      </div>
+
+      <div class="steps">
+        <div class="step rv">
+          <div class="n">01</div>
+          <div>
+            <h3>Fundament-Check</h3>
+            <p>Kein Workshop. Ihr Markenschutz, bevor der erste Anruf rausgeht. Wir prüfen Ihr Angebot, Ihre Positionierung, Ihr Wording und Ihre Vision. Trägt das Fundament nicht, setzen wir gemeinsam dort an. Bevor es Ihren Ruf kostet.</p>
+            <div class="scene"><span class="when">Montag, 9:30 Uhr</span>Wir lesen Ihre letzten drei Angebote. Wir hören 20 Minuten von Ihnen am Telefon. Am Abend bekommen Sie eine Seite: was am Hörer trägt, was nicht.</div>
+          </div>
+        </div>
+        <div class="step rv">
+          <div class="n">02</div>
+          <div>
+            <h3>Schärfen</h3>
+            <p>Wo es nicht trägt, ziehen wir es gemeinsam fest. Kein Komplett-Rebrand. Nur die Stellschrauben, die am Telefon den Unterschied machen. Bevor wir wählen, lesen wir uns drei Tage in Ihre Materie ein.</p>
+            <div class="scene"><span class="when">Dienstag, 14 Uhr</span>Wir sitzen zu zweit über Ihrem Wording. Drei Stellschrauben markiert, eine pro Sitzung verprobt. Sie hören mit. Sie korrigieren.</div>
+          </div>
+        </div>
+        <div class="step rv">
+          <div class="n">03</div>
+          <div>
+            <h3>Akquise mit Substanz</h3>
+            <p>Jetzt wird telefoniert. Von Svenja, seit über 15 Jahren. Ihr O-Ton: <span class="oton">„Wenn ich es für jemand anderen mache, ist es leichter, weil mein Kopf nicht mit drin hängt. Ein Nein ist bei mir nie ein endgültiges Nein."</span></p>
+            <span class="audiosoon">· Marken-Probe folgt · 30 Sek Svenja</span>
+            <div class="scene"><span class="when">Mittwoch, 10 Uhr</span>Svenja telefoniert. Sie hört. Sie bleibt im Gespräch, auch wenn ein Nein kommt. Am Abend bekommen Sie eine Notiz, mit wem heute gesprochen wurde.</div>
+          </div>
+        </div>
+        <div class="step rv">
+          <div class="n">04</div>
+          <div>
+            <h3>Lieferung</h3>
+            <p>Harte Zahlen, ehrliche Rückmeldung. Was am Telefon passiert, sagt etwas über Ihr Angebot. Das hören Sie von uns. Auch wenn es unbequem ist.</p>
+            <div class="scene"><span class="when">Freitag, 17 Uhr</span>Wir schicken Ihnen, was wir gehört haben. Auch das, was wir nicht hören wollten. Sie wissen jeden Freitag, wo Sie stehen.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="facts rv">
+        <div>
+          <h5>Zeit pro Schritt</h5>
+          <ul>
+            <li>Fundament-Check <b>kostenlos</b></li>
+            <li>Schärfen (bei Bedarf) <b>eine Woche</b></li>
+            <li>Akquise-Vorlauf <b>eine Woche</b></li>
+            <li>Mandat <b>3–6 Monate</b></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Investitionsrahmen</h5>
+          <ul>
+            <li>Monatlich <b>ab 1.950 €</b></li>
+            <li>Mindestlaufzeit <b>3 Monate</b></li>
+            <li>Vorher ist nichts messbar.</li>
+            <li>Sprechen Sie uns an — <b>wir melden uns persönlich</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="quote rv" style="margin-top:clamp(40px,5vw,60px);max-width:880px">Wir bauen einen Weg, der zu Ihnen passt — keine Pipeline, durch die jeder gleich durchmuss. Mit Ruhe. Mit Wiedererkennung. Mit Ihrem Ton im Ohr unserer Anrufer.</p>
+    </div>
+  </section>
+
+  <!-- ═══ 05 · WAS SIE BEKOMMEN (NEU) ════════════════════════════════════ -->
+  <section id="bekommen" style="background:var(--off-2)">
+    <div class="wrap">
+      <p class="secno rv"><span class="dot"></span><b>05</b> Was Sie bekommen</p>
+      <h2 class="d2 rv">Konkret. <span class="o">Nicht „Aktivitäten".</span></h2>
+      <p class="lede rv">Was am Ende auf Ihrem Tisch landet — nicht, was wir nebenbei tun. Sechs Lieferungen, sechs Beweisstücke.</p>
+
+      <div class="deliv">
+        <div class="delv rv">
+          <span class="ix" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg></span>
+          <h4>Fundament-Befund</h4>
+          <p>Eine Seite. Was Ihr Angebot am Telefon trägt. Was nicht. Drei Stellschrauben, sortiert nach Hebel. Direkt umsetzbar — oder klare Ansage, wenn etwas vorher anders werden muss.</p>
+          <p class="meta">Liefertag <b>Tag 5–10</b></p>
+        </div>
+        <div class="delv rv d1">
+          <span class="ix" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <h4>Verfeinertes Wording</h4>
+          <p>Ihre Erstkontakt-Sätze, Ihre Einwand-Antworten, Ihr Pitch. So formuliert, dass Sie sie wiedererkennen — nicht in Marketing-Sprache übersetzt.</p>
+          <p class="meta">Liefertag <b>Tag 14–21</b></p>
+        </div>
+        <div class="delv rv d2">
+          <span class="ix" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="17" y2="18"/><polyline points="3 6 4 7 6 5"/><polyline points="3 12 4 13 6 11"/><circle cx="4" cy="18" r="1"/></svg></span>
+          <h4>Kuratierte Zielliste</h4>
+          <p>80–120 Adressen, von Hand recherchiert. Sie geben jeden Namen frei, bevor jemand wählt. Keine generischen Großlisten.</p>
+          <p class="meta">Liefertag <b>Tag 21–28</b></p>
+        </div>
+        <div class="delv rv">
+          <span class="ix" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+          <h4>Wöchentlicher Bericht</h4>
+          <p>Jeden Freitag, 17 Uhr. Mit wem gesprochen wurde, was zurückkam, was an Ihrem Angebot wirkt — und was nicht. Klar geschrieben, kurz gehalten.</p>
+          <p class="meta">Liefertag <b>jeden Freitag</b></p>
+        </div>
+        <div class="delv rv d1">
+          <span class="ix" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="9 16 11 18 15 14"/></svg></span>
+          <h4>Qualifizierte Termine</h4>
+          <p>Direkt in Ihren Kalender. Vorqualifiziert nach Ihren Kriterien, mit kurzem Briefing pro Termin — damit Sie wissen, wer da gleich sitzt.</p>
+          <p class="meta">Liefertag <b>laufend</b></p>
+        </div>
+        <div class="delv rv d2">
+          <span class="ix" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="3" y2="12"/><line x1="7" y1="9" x2="7" y2="15"/><line x1="11" y1="6" x2="11" y2="18"/><line x1="15" y1="9" x2="15" y2="15"/><line x1="19" y1="11" x2="19" y2="13"/></svg></span>
+          <h4>Rückmeldung aus dem Markt</h4>
+          <p>Was wir am Hörer hören, sagt etwas über Ihr Angebot. Einmal pro Quartal verdichtet: drei Beobachtungen, sortiert nach Bedeutung für Sie.</p>
+          <p class="meta">Liefertag <b>quartalsweise</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 06 · ANDERS ALS DIE MEISTEN (NEU) ══════════════════════════════ -->
+  <section id="anders" class="sec-petrol">
+    <div class="wrap">
+      <p class="secno rv"><span class="dot"></span><b>06</b> Anders als die meisten</p>
+      <h2 class="d2 rv" style="max-width:980px">Es gibt viele, die telefonieren. <span class="o">Es gibt wenige, die hinhören, bevor sie wählen.</span></h2>
+      <p class="lede rv" style="margin-top:30px">Wir stellen den Vergleich offen. Damit Sie selbst entscheiden, was Sie wollen — bevor wir miteinander reden.</p>
+
+      <div class="vs rv d1">
+        <div class="vs-head">
+          <div class="col-h">Worauf es ankommt</div>
+          <div class="col-bad">Bei vielen am Markt</div>
+          <div class="col-good">Bei Morgan &amp; Bergen</div>
+        </div>
+        <div class="vs-row">
+          <div class="topic">Wie es losgeht</div>
+          <div class="bad">Setup-Workshop, Onboarding-Mappe, schnell auf den Hörer.</div>
+          <div class="good">Erst der Fundament-Check. Trägt etwas nicht, sagen wir es — bevor wir wählen.</div>
+        </div>
+        <div class="vs-row">
+          <div class="topic">Wer telefoniert</div>
+          <div class="bad">Wechselnde Anrufer, oft kurz eingelernt.</div>
+          <div class="good">Svenja. Persönlich. Seit über 15 Jahren am Hörer. Sonst niemand.</div>
+        </div>
+        <div class="vs-row">
+          <div class="topic">Wen wir ansprechen</div>
+          <div class="bad">Großlisten, oft generisch eingekauft.</div>
+          <div class="good">80–120 Adressen, von Hand recherchiert. Sie geben jeden Namen frei.</div>
+        </div>
+        <div class="vs-row">
+          <div class="topic">Was am Ende zählt</div>
+          <div class="bad">Die Zahl der Termine.</div>
+          <div class="good">Qualifizierte Termine, dokumentiert. Plus Rückmeldung aus dem Markt.</div>
+        </div>
+        <div class="vs-row">
+          <div class="topic">Wie viele Kunden</div>
+          <div class="bad">So viele wie möglich.</div>
+          <div class="good">Sechs im Jahr. Damit jeder die Aufmerksamkeit bekommt, die Sales verdient.</div>
+        </div>
+        <div class="vs-row">
+          <div class="topic">Wenn etwas nicht passt</div>
+          <div class="bad">Lange Laufzeiten, weiche Kennzahlen.</div>
+          <div class="good">Wir sagen es. Klar. Auch wenn es uns selbst betrifft.</div>
+        </div>
+      </div>
+
+      <p class="rv d2" style="margin-top:36px;font-family:'Newsreader',serif;font-style:italic;font-weight:400;font-size:clamp(17px,1.5vw,22px);line-height:1.5;color:var(--p-text);max-width:760px;font-variation-settings:'opsz' 36">Wir kritisieren niemanden. Wir machen es nur anders. Wenn Sie Volumen brauchen, sind Sie woanders besser aufgehoben — und wir nennen Adressen, wenn Sie fragen.</p>
+    </div>
+  </section>
+
+  <!-- ═══ 07 · PASSEND ═══════════════════════════════════════════════════ -->
+  <section id="fuer-wen">
+    <div class="wrap">
+      <p class="secno rv"><span class="dot"></span><b>07</b> Passt das zu Ihnen?</p>
+      <h2 class="d2 rv">Wir sind nicht für jeden — <span class="o">damit Ihre Qualität gewahrt bleibt.</span></h2>
+      <p class="lede rv">Lieber ein ehrliches Nein vorher, als ein verbranntes Gespräch danach. Schauen Sie selbst — diese Seite ist für Sie geschrieben.</p>
+      <div class="cols2">
+        <div class="c yes rv">
+          <div class="c-head"><span class="badge">Passt</span><h4>Wenn Sie sich hier erkennen.</h4></div>
+          <ul>
+            <li><span class="m" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Ihr Angebot ist gut. Aber die Akquise ist faktisch Ihre eigene — und läuft ohne System.</li>
+            <li><span class="m" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Sie wollen die kalte Erstansprache abgeben, die warmen Kontakte aber selbst behalten.</li>
+            <li><span class="m" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Sie wollen mitbestimmen, wer in Ihrem Namen angesprochen wird.</li>
+            <li><span class="m" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Sie wollen ehrliches Feedback zu Ihrem Angebot — auch wenn es unbequem ist.</li>
+          </ul>
+        </div>
+        <div class="c no rv d1">
+          <div class="c-head"><span class="badge">Passt nicht</span><h4>Wenn Sie sich hier erkennen.</h4></div>
+          <ul>
+            <li><span class="m" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> Sie suchen die billigste Lösung („500 € Vertriebsarbeit").</li>
+            <li><span class="m" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> Sie wollen Menge, ohne dass jemand Ihr Angebot hinterfragt.</li>
+            <li><span class="m" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> Sie wollen sofort wählen lassen — ohne dass das Fundament geprüft wird.</li>
+            <li><span class="m" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> Sie lasten ausbleibende Abschlüsse grundsätzlich anderen an.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 08 · SELBSTTEST ════════════════════════════════════════════════ -->
+  <section id="selbsttest" style="background:var(--off-3)">
+    <div class="wrap">
+      <p class="secno rv"><span class="dot"></span><b>08</b> Selbsttest</p>
+      <h2 class="d2 rv">Passt das hier zu Ihnen? <span class="o">Sieben Fragen.</span></h2>
+      <p class="lede rv">Keine Punkte. Kein Score. Drei mögliche Antworten am Ende. Eine davon ist: passt klar nicht. Dann nennen wir Ihnen drei andere Adressen, die zu Ihnen passen.</p>
+
+      <div class="selftest rv d1">
+        <div class="stHead">
+          <span>Selbsttest</span>
+          <span class="step"><span id="qStep">Frage 01 / 07</span></span>
+        </div>
+        <div class="segments" id="qSegs" aria-hidden="true">
+          <span class="seg on"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span>
+        </div>
+        <div id="qBlock">
+          <div class="bodyGrid">
+            <div class="qnum"><span id="qNum">01</span><span class="of">von 07</span></div>
+            <div>
+              <h3 class="q-text" id="qText">Was wäre Ihnen lieber?</h3>
+              <div class="opts" id="qOpts" role="radiogroup" aria-label="Antwortmöglichkeiten"></div>
+              <div class="nav-q">
+                <button class="back" id="qBack" disabled>← Zurück</button>
+                <button class="next" id="qNext" disabled>Weiter →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="rBlock" hidden>
+          <div class="bodyGrid">
+            <div class="rletter"><span id="rLetter">A</span><span class="lbl">Ergebnis</span></div>
+            <div>
+              <h3 class="rtitle" id="rTitle"></h3>
+              <div class="rbody" id="rBody"></div>
+              <div class="ractions">
+                <a id="rCta" class="btn fill" href="#anfrage" hidden>Fundament-Check anfragen <span class="arr">→</span></a>
+                <button class="restart" id="qRestart">Selbsttest erneut machen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 09 · TEAM ══════════════════════════════════════════════════════ -->
+  <section id="team">
+    <div class="wrap">
+      <p class="secno rv"><span class="dot"></span><b>09</b> Wer dahintersteht</p>
+      <h2 class="d2 rv">Zwei Menschen. <span class="o">Keine Logo-Wand.</span></h2>
+      <div class="people">
+        <div class="person rv">
+          <figure class="pph">
+            <span class="tag">Akquise</span>
+            <img src="assets/svenja-color.jpg" alt="Porträt Svenja Bergen" loading="lazy" decoding="async">
+          </figure>
+          <div class="pbody">
+            <div class="nm">Svenja Bergen</div>
+            <div class="ro">Akquise &amp; Erstkontakt</div>
+            <p>Über 15 Jahre Vertriebspraxis, quer durch Branchen. Von Automobil über Webdesign bis Verlag und Personalmanagement. Svenja führt die Gespräche selbst und merkt früh, wenn ein Angebot am Hörer nicht trägt. Sie kennt regulierte Berufsstände genauso wie technische Käufer und stellt ihren Ton pro Welt neu.</p>
+            <p class="pq">Ein Nein ist bei mir nie ein endgültiges Nein. Es ist nur ein anderer Weg ins nächste Gespräch.</p>
+          </div>
+        </div>
+        <div class="person rv d1">
+          <figure class="pph">
+            <span class="tag">Fundament</span>
+            <img src="assets/jamie-color.jpg" alt="Porträt Jamie Morgan" loading="lazy" decoding="async">
+          </figure>
+          <div class="pbody">
+            <div class="nm">Jamie Morgan</div>
+            <div class="ro">Fundament &amp; Vertriebsarchitektur</div>
+            <p>18 Jahre B2B-Vertrieb für Unternehmen in Europa. Konzern wie Mittelstand, Deals im sechs- bis siebenstelligen Bereich. Jamie weiß, wie Kaltakquise geht, bei der am Ende nicht nur ein Auftrag steht, sondern ein bleibender Eindruck fürs Folgegeschäft. Er verantwortet die Vorklärung: Angebot, Positionierung, Wording. Industrie-, Tech- und Beratungs-Käufer-Logiken hat er gleichzeitig im Kopf.</p>
+            <p class="pq">Wenn das Fundament nicht trägt, telefonieren wir nicht trotzdem. Punkt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pilot rv"><b>Ehrlich gesagt:</b> Wir starten mit einer kleinen Zahl Pilot-Partnern. Sie finden hier keine erfundenen Zitate und keine Logo-Wand. Was wir liefern, zeigen wir im Gespräch. An Ihrem Fall, nicht an fremden.</div>
+    </div>
+  </section>
+
+  <!-- ═══ 10 · FAQ ═══════════════════════════════════════════════════════ -->
+  <section id="faq">
+    <div class="wrap">
+      <p class="secno rv"><span class="dot"></span><b>10</b> Was Sie sich fragen</p>
+      <h2 class="d2 rv" style="margin-bottom:clamp(34px,4vw,52px)">Klartext. <span class="o">Keine Floskeln.</span></h2>
+      <div class="acc no-tags rv d1">
+        <details>
+          <summary><span class="h">Wen schickt ihr in meinem Namen ans Telefon?</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+          <div class="bd">Svenja. Persönlich. Keine wechselnde Aushilfe, kein angelerntes Team. Wen wir konkret ansprechen, stimmen wir vorher mit Ihnen ab. Sie entscheiden mit, statt sich hinterher zu wundern, wer da angerufen hat.</div>
+        </details>
+        <details>
+          <summary><span class="h">Behalte ich meine warmen Kontakte selbst?</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+          <div class="bd">Ja. Wir übernehmen die kalte Erstansprache bis zum qualifizierten Termin. Sobald eine Beziehung da ist, gehört sie Ihnen. Die pflegen Sie selbst weiter.</div>
+        </details>
+        <details>
+          <summary><span class="h">Was, wenn das Fundament nicht trägt?</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+          <div class="bd">Dann telefonieren wir nicht trotzdem. Wir setzen mit Ihnen gemeinsam dort an. Sie bekommen Klarheit statt einer verbrannten Kampagne — und Ihr Ruf bleibt heil. Genau dafür gibt es den Check.</div>
+        </details>
+        <details>
+          <summary><span class="h">Warum nicht der günstige Anbieter?</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+          <div class="bd">Weil billig oft heißt: Schein-Termine, künstlich in den Kalender getragen, damit überhaupt etwas vorzeigbar ist. Das füllt einen Kalender — und kostet Sie Ihren Ruf im Markt. Wir setzen keine Schein-Termine.</div>
+        </details>
+        <details>
+          <summary><span class="h">Wie viele Gespräche sind realistisch?</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+          <div class="bd">Kein „20+ im Monat"-Versprechen. Svenja schafft 15–20 qualifizierte Gespräche am Tag. Aber die Zahl entscheidet nicht über die Qualität — sondern, ob am Hörer jemand wirklich hinhört.</div>
+        </details>
+        <details>
+          <summary><span class="h">Was, wenn ich Akquise lieber selbst lernen will?</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+          <div class="bd">Können Sie. Wir helfen beim Schärfen Ihres Angebots — das ist die meiste Lern-Arbeit ohnehin. Wenn Sie danach selbst telefonieren wollen: gut. Wenn nicht: wir machen weiter. Wir verkaufen Ihnen keinen Kurs.</div>
+        </details>
+        <details>
+          <summary><span class="h">Wie kommen wir wieder auseinander, wenn es nicht passt?</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+          <div class="bd">Mindestlaufzeit drei Monate. Danach jeden Monat kündbar. Übergabe Ihrer warmen Kontakte sauber dokumentiert. Kein Daten-Tunnel, kein Vertragsverstecken. Eine Beziehung muss freiwillig sein.</div>
+        </details>
+        <details>
+          <summary><span class="h">Was, wenn Sie meine Branche fachlich nicht kennen?</span><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary>
+          <div class="bd">Drei Tage Einlesen vor dem ersten Wort. Wenn wir nach diesen drei Tagen merken, dass wir Ihre Materie fachlich nicht tragen, sagen wir es offen. Ehrlichkeit vor Umsatz, auch hier.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 11 · CTA ═══════════════════════════════════════════════════════ -->
+  <section id="anfrage" class="sec-petrol">
+    <div class="wrap">
+      <p class="secno rv"><span class="dot"></span><b>11</b> Der nächste Schritt</p>
+      <h2 class="d2 rv">Fundament-Check <span class="o">anfragen.</span></h2>
+      <div class="cta-grid">
+        <div class="rv">
+          <p class="lede">Kein Verkaufsgespräch. Eine Prüfung: Trägt Ihr Angebot am Telefon? Sagen Sie uns kurz, worum es geht. Wir melden uns persönlich zurück.</p>
+          <a class="cmail" href="mailto:kontakt@morgan-bergen.de?subject=Fundament-Check%20anfragen">
+            <span class="k">E-Mail</span><span class="v">kontakt@morgan-bergen.de</span>
+          </a>
+          <a class="cmail" href="#" aria-disabled="true" style="opacity:.6;cursor:not-allowed">
+            <span class="k">Für interne Abstimmung</span><span class="v">Briefing-PDF folgt</span>
+          </a>
+        </div>
+        <form class="formcard rv d1" name="fundament-check" method="POST" action="/danke.html" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="fundament-check">
+          <p hidden><label>Bitte leer lassen: <input name="bot-field"></label></p>
+          <p class="formhint">Vertraulich<span>·</span>Keine Bewertung im Erstgespräch<span>·</span>Antwort innerhalb 48 Stunden</p>
+          <div class="f"><label for="n">Vor- und Nachname <span class="req">*</span></label><input id="n" name="name" type="text" autocomplete="name" placeholder="Wie sollen wir Sie ansprechen?" required></div>
+          <div class="f"><label for="e">E-Mail <span class="req">*</span></label><input id="e" name="email" type="email" autocomplete="email" placeholder="ihre@firma.de" required></div>
+          <div class="f"><label for="t">Telefonnummer <span class="req">*</span></label><input id="t" name="phone" type="tel" autocomplete="tel" placeholder="+49 …" required></div>
+          <div class="f"><label for="m">Worum geht es? <span class="req">*</span></label><textarea id="m" name="message" rows="3" placeholder="In einem Satz: Was bieten Sie wem an?" required></textarea></div>
+          <button type="submit">Fundament-Check anfragen</button>
+          <p class="note">Pflichtfelder <span class="req">*</span> · Vertraulich · kein Newsletter · kein Verteiler</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="fgrid">
+        <div>
+          <a href="#top" class="brand"><span class="nm">Morgan<span class="amp">&amp;</span>Bergen</span><span class="sub">Vertriebsarbeit · Nürnberg · DACH</span></a>
+          <p style="margin-top:16px;max-width:340px">Vertriebsdienstleistung mit Fundament-Check vor Akquise. Sechs Mandate im Jahr. Geprüft, bevor in Ihrem Namen telefoniert wird.</p>
+        </div>
+        <div>
+          <div class="ft">Kontakt</div>
+          <a href="mailto:kontakt@morgan-bergen.de">kontakt@morgan-bergen.de</a>
+          <p>Telefon auf Anfrage</p>
+          <p style="margin-top:10px;font-size:12.5px;color:var(--p-cap)">Standort Nürnberg · DACH-weit tätig</p>
+        </div>
+        <div>
+          <div class="ft">Rechtliches</div>
+          <a href="#" class="soon" aria-disabled="true">Impressum (folgt)</a>
+          <a href="#" class="soon" aria-disabled="true">Datenschutz (folgt)</a>
+          <p style="font-size:12px;color:var(--p-cap);margin-top:8px">Werden mit der Live-Schaltung ergänzt.</p>
+        </div>
+      </div>
+      <div class="fbot">
+        <span>© 2026 Morgan &amp; Bergen</span>
+        <span class="claim">Vertriebsarbeit, die hält.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="scta"><a href="#anfrage">Fundament-Check anfragen →</a></div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    (function(){
+      // ─── HEADER + SCROLL PROGRESS ─────────────────────────────────────
+      var hdr=document.getElementById('hdr'),prog=document.getElementById('prog');
+      function onScroll(){
+        var h=document.documentElement,
+            scroll=h.scrollTop||document.body.scrollTop,
+            height=h.scrollHeight-h.clientHeight,
+            pct=height>0?(scroll/height)*100:0;
+        if(prog)prog.style.width=pct+'%';
+        if(hdr){if(scroll>40)hdr.classList.add('scrolled');else hdr.classList.remove('scrolled');}
+        // sticky CTA mobile
+        var s=document.getElementById('scta'),an=document.getElementById('anfrage');
+        if(s&&an){
+          var near=an.getBoundingClientRect().top<innerHeight*0.9;
+          if(scroll>innerHeight*1.3&&!near)s.classList.add('show');else s.classList.remove('show');
+        }
+      }
+      window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+      // ─── BURGER ───────────────────────────────────────────────────────
+      var b=document.getElementById('burger'),m=document.getElementById('mnav');
+      if(b&&m){
+        b.addEventListener('click',function(){
+          var o=getComputedStyle(m).display==='none';
+          m.style.display=o?'block':'none';
+          b.setAttribute('aria-expanded',String(o));
+        });
+        m.querySelectorAll('a').forEach(function(a){
+          a.addEventListener('click',function(){
+            m.style.display='none';b.setAttribute('aria-expanded','false');
+          });
+        });
+      }
+
+      // ─── REVEAL ───────────────────────────────────────────────────────
+      var io=new IntersectionObserver(function(es){
+        es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+      },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+      document.querySelectorAll('.rv').forEach(function(e){io.observe(e);});
+
+      // ─── KOSTEN SLIDER ────────────────────────────────────────────────
+      var sl=document.getElementById('slider'),av=document.getElementById('av'),lo=document.getElementById('loss'),l3=document.getElementById('loss3');
+      function fmt(n){return Math.round(n).toLocaleString('de-DE');}
+      function upd(){var v=+sl.value;av.textContent=fmt(v);lo.textContent=fmt(v*3);l3.textContent=fmt(v*3*3);}
+      if(sl){sl.addEventListener('input',upd);upd();}
+
+      // ─── SELBSTTEST ───────────────────────────────────────────────────
+      var QUIZ=[
+        {q:'Was wäre Ihnen lieber?',
+         a:[
+           {t:'Sechs gute Kunden, die bleiben.',w:2},
+           {t:'Mehr Planbarkeit, ohne Vollauslastung.',w:1},
+           {t:'So viel Reichweite wie möglich, so schnell wie möglich.',w:0}
+         ]},
+        {q:'Wie kommen heute neue Kunden zu Ihnen?',
+         a:[
+           {t:'Empfehlungen tragen, aber es klafft eine Lücke, wenn die wegfallen.',w:2},
+           {t:'Wir machen wenig Akquise und merken, dass das nicht mehr reicht.',w:1},
+           {t:'Wir brauchen viele Termine, schnell und billig.',w:0}
+         ]},
+        {q:'Was würden Sie zur Prüfung freigeben, bevor wir telefonieren?',
+         a:[
+           {t:'Angebot, Positionierung und Wording. Komplett.',w:2},
+           {t:'Das Wesentliche. Bei Bedarf auch mehr.',w:1},
+           {t:'Nur das Nötigste. Das Telefon soll laufen.',w:0}
+         ]},
+        {q:'Wer entscheidet, mit wem in Ihrem Namen gesprochen wird?',
+         a:[
+           {t:'Sie und wir, gemeinsam. Wir sagen ab, wenn etwas nicht passt.',w:2},
+           {t:'Sie. Wir bringen den Vorschlag, Sie geben den Rahmen.',w:1},
+           {t:'Egal. Hauptsache es wird angerufen.',w:0}
+         ]},
+        {q:'Wie viele neue Kunden brauchen Sie pro Jahr?',
+         a:[
+           {t:'Drei bis sechs, mit Tiefe.',w:2},
+           {t:'Sechs bis zwölf, qualifiziert.',w:1},
+           {t:'Mehr als zwölf. Volumen.',w:0}
+         ]},
+        {q:'Trägt Ihr Angebot, wenn am Telefon eine ehrliche Frage zurückkommt?',
+         a:[
+           {t:'Ich glaube ja, möchte aber prüfen lassen.',w:2},
+           {t:'Bin mir unsicher. Genau deswegen lese ich hier.',w:1},
+           {t:'Wir wollen anrufen, das Angebot ist nicht die Baustelle.',w:0}
+         ]},
+        {q:'Was wäre für Sie schlimmer?',
+         a:[
+           {t:'Ein schlechter Anruf in meinem Namen, der sich im Markt rumspricht.',w:2},
+           {t:'Beides gleich schlimm.',w:1},
+           {t:'Ein Quartal ohne neue Kunden.',w:0}
+         ]}
+      ];
+      var RESULTS={
+        A:{
+          title:'Passt. <span class="o">Beidseitig.</span>',
+          body:'<p>Ihre Antworten passen zu der Art, wie wir arbeiten. Sechs Kunden im Jahr, Substanz vor Volumen, kein Anruf bevor das Fundament steht.</p><p>Wenn Sie wollen, schauen wir uns Ihr Angebot, Ihre Positionierung und Ihr Wording an. Eine Stunde, in Ruhe. Wenn etwas nicht trägt, sagen wir es. Wenn wir Sie nicht tragen können, sagen wir ab.</p>',
+          showCta:true
+        },
+        B:{
+          title:'Bedingt. <span class="o">Reden wir.</span>',
+          body:'<p>Ein paar Antworten deuten in unsere Richtung, andere in eine andere. Das ist kein K.o.</p><p>Bevor jemand von uns telefoniert, müssten wir prüfen, ob Ihr Angebot, Ihre Positionierung und Ihr Wording das tragen, was wir am Telefon vertreten würden. Das geht in einem Gespräch. Wir sagen Ihnen dort, ob es passt. Wenn nicht, mit Begründung.</p>',
+          showCta:true
+        },
+        C:{
+          title:'Passt nicht. <span class="o">Mit Respekt.</span>',
+          body:'<p>Was Sie suchen, ist nicht das, was wir bauen. Sie brauchen wahrscheinlich Volumen, schnelle Termine, einen breiteren Trichter. Wir machen das Gegenteil: sechs Kunden im Jahr, langes Vorgespräch, Absage-Recht beidseitig.</p><p>Damit Sie hier nicht umsonst gelandet sind: Drei Anlaufstellen, die in unserem Umfeld einen guten Ruf haben und Volumen seriös aufstellen:</p><ul style="list-style:none;padding-left:0;margin-top:8px"><li style="padding:8px 0;border-top:1px solid var(--line-2)"><strong style="color:var(--petrol)">Akquisebüro Moser</strong> · klassische Telefonakquise mit Methodik</li><li style="padding:8px 0;border-top:1px solid var(--line-2)"><strong style="color:var(--petrol)">Stephan Heinrich</strong> · Vertriebs-Coaching für komplexe B2B-Verkäufe</li><li style="padding:8px 0;border-top:1px solid var(--line-2)"><strong style="color:var(--petrol)">Tobias Ain</strong> · Sales-Training für mittelständische Vertriebsteams</li></ul><p style="margin-top:14px;font-style:italic;color:var(--cap)">Wir bekommen für diesen Hinweis nichts. Wir kennen den Markt.</p>',
+          showCta:false
+        }
+      };
+
+      (function(){
+        var qNum=document.getElementById('qNum'),qStep=document.getElementById('qStep'),
+            qText=document.getElementById('qText'),qOpts=document.getElementById('qOpts'),
+            qBack=document.getElementById('qBack'),qNext=document.getElementById('qNext'),
+            qBlock=document.getElementById('qBlock'),qSegs=document.getElementById('qSegs'),
+            rBlock=document.getElementById('rBlock'),rTitle=document.getElementById('rTitle'),
+            rBody=document.getElementById('rBody'),rCta=document.getElementById('rCta'),
+            rLetter=document.getElementById('rLetter'),qRestart=document.getElementById('qRestart');
+        if(!qNum||!qOpts)return;
+        var idx=0,answers=new Array(QUIZ.length).fill(null);
+        var ROMAN=['i','ii','iii','iv','v'];
+        function pad2(n){return n<10?'0'+n:''+n;}
+        function updateSegs(upto){
+          var segs=qSegs.querySelectorAll('.seg');
+          for(var i=0;i<segs.length;i++){if(i<upto)segs[i].classList.add('on');else segs[i].classList.remove('on');}
+        }
+        function render(){
+          var q=QUIZ[idx];
+          qNum.textContent=pad2(idx+1);
+          qStep.textContent='Frage '+pad2(idx+1)+' / '+pad2(QUIZ.length);
+          updateSegs(idx+1);
+          qText.textContent=q.q;
+          qOpts.innerHTML='';
+          q.a.forEach(function(opt,i){
+            var btn=document.createElement('button');
+            btn.type='button';
+            btn.setAttribute('role','radio');
+            btn.setAttribute('aria-checked',answers[idx]===i?'true':'false');
+            btn.className='opt'+(answers[idx]===i?' sel':'');
+            btn.innerHTML='<span class="ix">'+ROMAN[i]+'</span><span class="txt">'+opt.t+'</span>';
+            btn.addEventListener('click',function(){
+              answers[idx]=i;
+              Array.prototype.forEach.call(qOpts.querySelectorAll('.opt'),function(o){o.classList.remove('sel');o.setAttribute('aria-checked','false');});
+              btn.classList.add('sel');btn.setAttribute('aria-checked','true');
+              qNext.disabled=false;
+            });
+            qOpts.appendChild(btn);
+          });
+          qBack.disabled=(idx===0);
+          qNext.disabled=(answers[idx]===null);
+          qNext.textContent=(idx===QUIZ.length-1?'Ergebnis anzeigen →':'Weiter →');
+        }
+        function finish(){
+          var score=answers.reduce(function(s,a,i){return s+(a===null?0:QUIZ[i].a[a].w);},0);
+          var key=score>=11?'A':(score>=6?'B':'C');
+          var r=RESULTS[key];
+          rTitle.innerHTML=r.title;
+          rBody.innerHTML=r.body;
+          rLetter.textContent=key;
+          if(r.showCta){rCta.hidden=false;}else{rCta.hidden=true;}
+          updateSegs(QUIZ.length);
+          qStep.textContent='Ergebnis';
+          qBlock.hidden=true;
+          rBlock.hidden=false;
+          var card=document.querySelector('#selbsttest .selftest');
+          if(card){var top=card.getBoundingClientRect().top+window.pageYOffset-90;window.scrollTo({top:top,behavior:'smooth'});}
+        }
+        qNext.addEventListener('click',function(){
+          if(idx<QUIZ.length-1){idx++;render();}
+          else{finish();}
+        });
+        qBack.addEventListener('click',function(){
+          if(idx>0){idx--;render();}
+        });
+        qRestart.addEventListener('click',function(){
+          idx=0;answers=new Array(QUIZ.length).fill(null);
+          qBlock.hidden=false;rBlock.hidden=true;
+          render();
+          var card=document.querySelector('#selbsttest .selftest');
+          if(card){var top=card.getBoundingClientRect().top+window.pageYOffset-90;window.scrollTo({top:top,behavior:'smooth'});}
+        });
+        render();
+      })();
+    })();
+  </script>
+</body>
+</html>
