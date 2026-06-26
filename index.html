@@ -199,6 +199,8 @@
     .hero .tags{font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--p-cap);font-weight:600;margin-top:38px;opacity:0;animation:fadeIn .9s ease-out 1.08s forwards}
     @keyframes fadeIn{to{opacity:1}}
 
+    .hero-portrait-band{display:none}
+
     .hero-sig{position:relative;z-index:3;margin-top:clamp(48px,7vw,86px);padding-top:24px;border-top:1px solid var(--p-line-2);display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--p-cap);font-weight:600;opacity:0;animation:fadeIn .9s ease-out 1.2s forwards}
     .hero-sig .nm{color:var(--off)}
     .hero-sig .nm .amp{color:var(--orange-soft);margin:0 .35em;font-family:'Newsreader',serif;font-style:italic;font-weight:500;letter-spacing:0;font-variation-settings:"opsz" 36;text-transform:none;font-size:1.4em;line-height:0;vertical-align:-2px}
@@ -474,9 +476,29 @@
     }
     @media (max-width:860px){
       .nlinks{display:none}.ncta{display:none}.burger{display:flex}
-      .hero{min-height:auto;padding:clamp(80px,14vh,120px) 0 clamp(72px,11vw,100px)}
-      .hero-bg-img{width:80%;filter:grayscale(.08) contrast(1.06) brightness(.7)}
-      .hero-bg-overlay{background:linear-gradient(180deg,rgba(14,31,31,.6),rgba(14,31,31,.75) 50%,rgba(14,31,31,.92))}
+      .hero{min-height:auto;padding:clamp(56px,10vh,96px) 0 clamp(72px,11vw,100px)}
+      .hero-bg{display:none}
+      .hero h1{font-size:clamp(40px,9.5vw,64px);line-height:1.02}
+      .hero .claim{font-size:clamp(18px,2.6vw,24px);margin-top:24px}
+      .hero .lede{font-size:15.5px;margin-top:22px}
+      .hero .actions{margin-top:30px;flex-direction:column;width:100%}
+      .hero .actions .btn{width:100%;justify-content:center}
+      .hero-sig{flex-direction:column;align-items:flex-start;text-align:left;gap:8px}
+      .hero-portrait-band{
+        display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--orange);
+        border-radius:10px;overflow:hidden;border:1px solid var(--p-line-2);
+        margin:0 auto clamp(28px,5vw,40px);width:100%;max-width:520px;aspect-ratio:3/2;
+        box-shadow:var(--shadow-deep);
+      }
+      .hpb{position:relative;overflow:hidden;background:var(--deep);margin:0}
+      .hpb img{width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.05) brightness(.95)}
+      .hpb-l img{object-position:50% 26%}
+      .hpb-r img{object-position:50% 16%}
+      .hpb::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgba(14,31,31,.72),rgba(14,31,31,.12) 42%,transparent 65%)}
+      .hpb figcaption{position:absolute;left:12px;right:12px;bottom:12px;display:flex;flex-direction:column;gap:3px;z-index:2}
+      .hpb .nm{font-family:'Newsreader',serif;font-weight:600;font-size:13px;color:var(--off);line-height:1.1;letter-spacing:-.005em;font-variation-settings:"opsz" 36}
+      .hpb .ro{font-family:'Plus Jakarta Sans',sans-serif;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--p-cap);font-weight:600}
+      .scrollcue{display:none}
       .split,.grid-2,.cols2,.cta-grid{grid-template-columns:1fr;gap:32px}
       .cost .res{padding-left:0;border-left:0;padding-top:24px;border-top:1px solid var(--line);margin-top:12px}
       .step{grid-template-columns:1fr}
@@ -563,6 +585,16 @@
     </div>
     <div class="wrap">
       <div class="hero-inner">
+        <div class="hero-portrait-band" aria-hidden="true">
+          <figure class="hpb hpb-l">
+            <img src="assets/svenja-bw.jpg" alt="" loading="eager" decoding="async">
+            <figcaption><span class="nm">Svenja Bergen</span><span class="ro">Akquise</span></figcaption>
+          </figure>
+          <figure class="hpb hpb-r">
+            <img src="assets/jamie-bw.jpg" alt="" loading="eager" decoding="async">
+            <figcaption><span class="nm">Jamie Morgan</span><span class="ro">Fundament</span></figcaption>
+          </figure>
+        </div>
         <p class="ey"><span class="dot"></span>Substanz <b>·</b> Fundament <b>·</b> Akquise</p>
         <h1>
           <span class="line"><span>Wenn wir Akquise machen,</span></span>
