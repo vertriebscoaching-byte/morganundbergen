@@ -398,7 +398,7 @@
     /* ─── TEAM ────────────────────────────────────────────────────────── */
     .people{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,44px);margin-top:clamp(36px,5vw,56px)}
     .people > *{min-width:0}
-    .person{padding:0;background:var(--off-2);border:1px solid var(--line);border-radius:var(--rad-l);position:relative;transition:transform var(--t-med),box-shadow var(--t-med),border-color var(--t-med);overflow:hidden}
+    .person{padding:0;background:var(--off-2);border:1px solid var(--line);border-radius:var(--rad-l);position:relative;transition:transform var(--t-med),box-shadow var(--t-med),border-color var(--t-med);overflow:hidden;display:flex;flex-direction:column;height:100%}
     .person:hover{transform:translateY(-3px);box-shadow:var(--shadow-soft);border-color:var(--line-2)}
     .pph{aspect-ratio:4/5;overflow:hidden;background:var(--off-3);position:relative;border-bottom:1px solid var(--line)}
     .pph img{width:100%;height:100%;object-fit:cover;object-position:50% 28%;display:block;transition:transform 1.6s cubic-bezier(.16,.84,.28,1)}
@@ -406,7 +406,7 @@
     .person:hover .pph img{transform:scale(1.04)}
     .pph::after{content:'';position:absolute;left:0;right:0;bottom:0;height:38%;background:linear-gradient(to top,rgba(247,245,242,.22),transparent);pointer-events:none}
     .pph .tag{position:absolute;top:14px;left:14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--off);background:rgba(14,31,31,.55);backdrop-filter:blur(8px);padding:7px 10px;border-radius:4px;border:1px solid rgba(247,245,242,.18);z-index:2}
-    .pbody{padding:clamp(28px,3.5vw,38px)}
+    .pbody{padding:clamp(28px,3.5vw,38px);display:flex;flex-direction:column;flex:1}
     .pbody .nm{font-family:'Newsreader',serif;font-weight:600;font-size:clamp(22px,2vw,26px);color:var(--petrol);line-height:1.2;letter-spacing:-.008em;font-variation-settings:"opsz" 36}
     .pbody .ro{font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--cap);font-weight:600;margin-top:6px}
     .pbody p{margin-top:18px;font-size:15.5px;line-height:1.68;color:var(--txt)}
@@ -414,7 +414,8 @@
     .pbody .pq::before{content:'„';color:var(--orange);font-size:26px;margin-right:4px;line-height:0;font-style:normal;font-weight:600}
     .pbody .pq::after{content:'"';color:var(--orange);font-size:26px;margin-left:2px;line-height:0;font-style:normal;font-weight:600}
 
-    .pcta{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:11px 18px;background:transparent;color:var(--petrol);border:1px solid var(--line-2);border-radius:7px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;text-decoration:none;transition:transform var(--t-fast),border-color var(--t-fast),background var(--t-fast),color var(--t-fast)}
+    .pcta{display:inline-flex;align-items:center;gap:10px;margin-top:auto;align-self:flex-start;padding:11px 18px;background:transparent;color:var(--petrol);border:1px solid var(--line-2);border-radius:7px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:600;text-decoration:none;transition:transform var(--t-fast),border-color var(--t-fast),background var(--t-fast),color var(--t-fast)}
+    .pcta-spacer{margin-top:22px}
     .pcta:hover{border-color:var(--orange);color:var(--orange-deep);background:rgba(217,96,30,.06);transform:translateY(-1px)}
     .pcta .liico{width:15px;height:15px;color:currentColor}
     .pcta .arr{transition:transform var(--t-fast);font-weight:400}
